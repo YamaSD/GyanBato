@@ -3135,7 +3135,7 @@ body {
       width: 52%;
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 0px;
     }
 
     .faq-item {
@@ -3216,7 +3216,7 @@ body {
       min-height: 350px;
       border-radius: 80px;
       background: #E8EDEF;
-      border: 2px solid #fff;
+      border: 11px solid #fff;
       box-shadow: 0 0 0 1px #e7e4d8;
       padding: 42px 45px 40px 10%;
       display: flex;
