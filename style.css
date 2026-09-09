@@ -3838,10 +3838,11 @@ em {
     box-shadow 0.5s ease;
 }
 
-/* Middle card */
-.testimonials-card:nth-child(3n + 2) {
+/* Even cards */
+.testimonials-card:nth-child(even) {
   transform: translateY(30px);
 }
+
 
 
 /* =========================================
@@ -4131,6 +4132,8 @@ em {
   column-gap: 45px;
 
   min-height: 166px;
+
+  padding-bottom: 14px;
 }
 
 
@@ -4180,9 +4183,9 @@ em {
 .footer-description {
   max-width: 285px;
 
-  color: #5b5b5b;
+  color: #45484D;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -4198,9 +4201,9 @@ em {
 .footer-heading {
   margin-bottom: 16px;
 
-  color: #4c4c4c;
+  color: #373A3E;
 
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
 }
@@ -4218,7 +4221,7 @@ em {
 }
 
 .footer-links a {
-  color: #5d5d5d;
+  color: #45484D;
 
   font-size: 13px;
   line-height: 1.2;
@@ -4236,7 +4239,7 @@ em {
 
 /* Legal links */
 .footer-legal-links a {
-  color: #2785c5;
+  color: #1E7EBB;
 }
 
 .footer-legal-links a:hover {
@@ -4271,7 +4274,7 @@ em {
 }
 
 .footer-copyright {
-  color: #5c5c5c;
+  color: #45484D;
 
   font-size: 13px;
 }
