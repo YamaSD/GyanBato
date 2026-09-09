@@ -1,3 +1,425 @@
+
+
+
+/* =========================================================
+   Montserrat
+   ========================================================= */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* =========================================================
+   Open Sans
+   ========================================================= */
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* =========================================================
+   Montserrat - Convenience Classes
+   ========================================================= */
+
+.font-montserrat-100 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font-montserrat-100-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.font-montserrat-200 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font-montserrat-200-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.font-montserrat-300 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-montserrat-300-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-montserrat-400-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-montserrat-500-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.font-montserrat-600 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-montserrat-600-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-montserrat-700-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.font-montserrat-800 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-montserrat-800-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.font-montserrat-900 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-montserrat-900-italic {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* =========================================================
+   Open Sans - Convenience Classes
+   ========================================================= */
+
+.font-opensans-300 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-opensans-300-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.font-opensans-400 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-opensans-400-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.font-opensans-600 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-opensans-600-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.font-opensans-700 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-opensans-700-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.font-opensans-800 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.font-opensans-800-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+
 /* =========================
    Reset
 ========================= */
@@ -8,10 +430,18 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  color: #4a4a4a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+em {
+  font-style: italic;
 }
 
 /* =========================
@@ -299,15 +729,11 @@ body {
   background-color: #fffef0;
 
   background-image:
-    linear-gradient(
+    linear-gradient(rgba(23, 76, 104, 0.055) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
       rgba(23, 76, 104, 0.055) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(23, 76, 104, 0.055) 1px,
-      transparent 1px
-    );
+      transparent 1px);
 
   background-size: 64px 64px;
 
@@ -2204,32 +2630,24 @@ body {
 
 .cta-avatar-one {
   background:
-    radial-gradient(
-      circle at 50% 35%,
+    radial-gradient(circle at 50% 35%,
       #e8b37d 0 24%,
-      transparent 25%
-    ),
-    linear-gradient(
-      145deg,
+      transparent 25%),
+    linear-gradient(145deg,
       #9a3c26 0 45%,
       #edc08e 46% 70%,
-      #542a25 71%
-    );
+      #542a25 71%);
 }
 
 .cta-avatar-two {
   background:
-    radial-gradient(
-      circle at 50% 34%,
+    radial-gradient(circle at 50% 34%,
       #d89c76 0 24%,
-      transparent 25%
-    ),
-    linear-gradient(
-      135deg,
+      transparent 25%),
+    linear-gradient(135deg,
       #202d3b 0 42%,
       #e2aa83 43% 70%,
-      #6b4439 71%
-    );
+      #6b4439 71%);
 }
 
 .cta-avatar-three {
@@ -2284,8 +2702,7 @@ body {
   border-radius: 0 70% 45% 0;
 
   transform:
-    rotate(-15deg)
-    skewY(-5deg);
+    rotate(-15deg) skewY(-5deg);
 }
 
 .cta-path::before {
@@ -2429,16 +2846,12 @@ body {
 
   /* subtle grid background */
   background-image:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(215, 220, 218, 0.28) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      to bottom,
+      transparent 1px),
+    linear-gradient(to bottom,
       rgba(215, 220, 218, 0.28) 1px,
-      transparent 1px
-    );
+      transparent 1px);
 
   background-size: 72px 72px;
 }
@@ -3082,589 +3495,591 @@ body {
 
 
 .faq-section {
-      background: #FDFEF1;
-      width: 100%;
-      padding: 80px 20px 100px;
-    }
+  background: #FDFEF1;
+  width: 100%;
+  padding: 80px 20px 100px;
+}
 
-    .faq-container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    /* Header */
-    .faq-header {
-      text-align: center;
-      margin-bottom: 36px;
-    }
+/* Header */
+.faq-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
 
-    .faq-label {
-      display: inline-block;
-      margin-bottom: 22px;
-      color: #ff7048;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 1px;
-    }
+.faq-label {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #ff7048;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
 
-    .faq-title {
-      color: #194d68;
-      font-size: clamp(30px, 4vw, 44px);
-      line-height: 1.15;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
+.faq-title {
+  color: #194d68;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
 
-    .faq-subtitle {
-      color: #444;
-      font-size: 16px;
-      letter-spacing: 0.5px;
-    }
+.faq-subtitle {
+  color: #444;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
 
-    /* Accordion */
-    .faq-accordion {
-      position: relative;
-      min-height: 350px;
-      display: flex;
-      align-items: center;
-    }
+/* Accordion */
+.faq-accordion {
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
 
-    .faq-list {
-      position: relative;
-      z-index: 2;
-      width: 52%;
-      display: flex;
-      flex-direction: column;
-      gap: 0px;
-    }
+.faq-list {
+  position: relative;
+  z-index: 2;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
 
-    .faq-item {
-      position: relative;
-    }
+.faq-item {
+  position: relative;
+}
 
-    .faq-button {
-      width: 100%;
-      min-height: 58px;
-      border: 1px solid #e5e5e5;
-      border-radius: 30px;
-      background: #fff;
-      color: #707070;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 0 18px 0 12px;
-      cursor: pointer;
-      text-align: left;
-      font-family: inherit;
-      font-size: 15px;
-      letter-spacing: 0.3px;
-      transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease;
-    }
+.faq-button {
+  width: 100%;
+  min-height: 58px;
+  border-width: 0px 1px 0px 1px;
+  border-style: solid;
+  border-color: #D2D2D2;
+  border-radius: 30px;
+  background: #fff;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px 0 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
 
-    .faq-button:hover {
-      border-color: #cbd8de;
-    }
+.faq-button:hover {
+  border-color: #cbd8de;
+}
 
-    .faq-item.is-active .faq-button {
-      background: #E8EDEF;
-      border-color: #E8EDEF;
-      color: #143A4E;
-    }
+.faq-item.is-active .faq-button {
+  background: #E8EDEF;
+  border-color: #E8EDEF;
+  color: #143A4E;
+}
 
-    .faq-dot {
-      flex: 0 0 19px;
-      width: 19px;
-      height: 19px;
-      border-radius: 50%;
-      background: #bdcbd2;
-      transition: background 0.3s ease;
-    }
+.faq-dot {
+  flex: 0 0 19px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #bdcbd2;
+  transition: background 0.3s ease;
+}
 
-    .faq-item.is-active .faq-dot {
-      background: #194862;
-    }
+.faq-item.is-active .faq-dot {
+  background: #194862;
+}
 
-    .faq-question {
-      flex: 1;
-    }
+.faq-question {
+  flex: 1;
+}
 
-    .faq-arrow {
-      width: 8px;
-      height: 8px;
-      border-top: 1.5px solid currentColor;
-      border-right: 1.5px solid currentColor;
-      transform: rotate(45deg);
-      transition: transform 0.3s ease;
-      opacity: 0.7;
-    }
+.faq-arrow {
+  width: 8px;
+  height: 8px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  opacity: 0.7;
+}
 
-    .faq-item.is-active .faq-arrow {
-      transform: rotate(135deg);
-    }
+.faq-item.is-active .faq-arrow {
+  transform: rotate(135deg);
+}
 
-    /* Answer panel */
-    .faq-answer-panel {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      width: 54%;
-      height: 100%;
-      min-height: 350px;
-      border-radius: 80px;
-      background: #E8EDEF;
-      border: 11px solid #fff;
-      box-shadow: 0 0 0 1px #e7e4d8;
-      padding: 42px 45px 40px 10%;
-      display: flex;
-      align-items: flex-start;
-    }
+/* Answer panel */
+.faq-answer-panel {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 54%;
+  height: 100%;
+  min-height: 350px;
+  border-radius: 80px;
+  background: #E8EDEF;
+  border: 11px solid #fff;
+  box-shadow: 0 0 0 1px #e7e4d8;
+  padding: 42px 45px 40px 10%;
+  display: flex;
+  align-items: flex-start;
+}
 
-    .faq-answer {
-      width: 100%;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(15px);
-      position: absolute;
-      transition:
-        opacity 0.3s ease,
-        transform 0.3s ease,
-        visibility 0.3s ease;
-    }
+.faq-answer {
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(15px);
+  position: absolute;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
 
-    .faq-answer.is-active {
-      position: relative;
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0);
-    }
+.faq-answer.is-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
 
-    .faq-answer-title {
-      color: #194d68;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 14px;
-    }
+.faq-answer-title {
+  color: #194d68;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
 
-    .faq-answer-text {
-      color: #707070;
-      font-size: 15px;
-      line-height: 1.65;
-      letter-spacing: 0.2px;
-    }
+.faq-answer-text {
+  color: #707070;
+  font-size: 15px;
+  line-height: 1.65;
+  letter-spacing: 0.2px;
+}
 
-    /* Responsive */
-    @media (max-width: 800px) {
-      .faq-section {
-        padding: 60px 18px;
-      }
+/* Responsive */
+@media (max-width: 800px) {
+  .faq-section {
+    padding: 60px 18px;
+  }
 
-      .faq-accordion {
-        display: block;
-        min-height: auto;
-      }
+  .faq-accordion {
+    display: block;
+    min-height: auto;
+  }
 
-      .faq-list {
-        width: 100%;
-        gap: 6px;
-      }
+  .faq-list {
+    width: 100%;
+    gap: 6px;
+  }
 
-      .faq-answer-panel {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: 100%;
-        min-height: 0;
-        height: auto;
-        margin-top: 10px;
-        border-radius: 35px;
-        padding: 30px;
-      }
+  .faq-answer-panel {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 35px;
+    padding: 30px;
+  }
 
-      .faq-answer {
-        position: relative;
-        display: none;
-      }
+  .faq-answer {
+    position: relative;
+    display: none;
+  }
 
-      .faq-answer.is-active {
-        display: block;
-      }
-    }
+  .faq-answer.is-active {
+    display: block;
+  }
+}
 
-    @media (max-width: 480px) {
-      .faq-section {
-        padding: 45px 14px;
-      }
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 45px 14px;
+  }
 
-      .faq-header {
-        margin-bottom: 28px;
-      }
+  .faq-header {
+    margin-bottom: 28px;
+  }
 
-      .faq-title {
-        font-size: 30px;
-      }
+  .faq-title {
+    font-size: 30px;
+  }
 
-      .faq-subtitle {
-        font-size: 14px;
-      }
+  .faq-subtitle {
+    font-size: 14px;
+  }
 
-      .faq-button {
-        min-height: 54px;
-        font-size: 14px;
-      }
+  .faq-button {
+    min-height: 54px;
+    font-size: 14px;
+  }
 
-      .faq-answer-panel {
-        padding: 28px 24px;
-        border-radius: 28px;
-      }
-    }
-
-
+  .faq-answer-panel {
+    padding: 28px 24px;
+    border-radius: 28px;
+  }
+}
 
 
-    /* =========================================
+
+
+/* =========================================
        TESTIMONIALS SECTION
     ========================================= */
 
-    .testimonials-section {
-      width: 100%;
-      padding: 65px 20px 40px;
-      overflow: hidden;
-    }
+.testimonials-section {
+  width: 100%;
+  padding: 65px 20px 40px;
+  overflow: hidden;
+}
 
-    .testimonials-container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.testimonials-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
-    /* =========================================
+/* =========================================
        HEADER
     ========================================= */
 
-    .testimonials-header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
 
-    .testimonials-label {
-      display: inline-block;
-      color: #ff6842;
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      margin-bottom: 26px;
-    }
+.testimonials-label {
+  display: inline-block;
+  color: #ff6842;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 26px;
+}
 
-    .testimonials-title {
-      color: #194d68;
-      font-size: clamp(30px, 4vw, 42px);
-      line-height: 1.15;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
+.testimonials-title {
+  color: #194d68;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-    .testimonials-subtitle {
-      max-width: 480px;
-      margin: 0 auto;
-      color: #444;
-      font-size: 17px;
-      line-height: 1.55;
-      letter-spacing: 0.3px;
-    }
+.testimonials-subtitle {
+  max-width: 480px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: 0.3px;
+}
 
 
-    /* =========================================
+/* =========================================
        CAROUSEL
     ========================================= */
 
-    .testimonials-carousel {
-      position: relative;
-      width: 100%;
-    }
+.testimonials-carousel {
+  position: relative;
+  width: 100%;
+}
 
-    .testimonials-viewport {
-      width: 100%;
-      overflow: hidden;
-      padding: 5px 0 75px 33px;
-    }
+.testimonials-viewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 5px 0 75px 33px;
+}
 
-    .testimonials-track {
-      display: flex;
-      align-items: center;
-      gap: 77px;
-      will-change: transform;
-    }
+.testimonials-track {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+  will-change: transform;
+}
 
 
-    /* =========================================
+/* =========================================
        TESTIMONIAL CARD
     ========================================= */
 
-    .testimonials-card {
-      flex: 0 0 calc((100% - 80px) / 3);
-      min-height: 215px;
-      padding: 27px 20px 24px;
-      max-width: 330px;
+.testimonials-card {
+  flex: 0 0 calc((100% - 80px) / 3);
+  min-height: 215px;
+  padding: 27px 20px 24px;
+  max-width: 330px;
 
-      background: #ffffff;
-      border-radius: 7px;
+  background: #ffffff;
+  border-radius: 7px;
 
-      box-shadow: 0px 22.77px 11px 0px #19486214;
-
-
-      transition:
-        transform 0.5s ease,
-        opacity 0.5s ease,
-        box-shadow 0.5s ease;
-    }
-
-    /* Middle card */
-    .testimonials-card:nth-child(3n + 2) {
-      transform: translateY(30px);
-    }
+  box-shadow: 0px 22.77px 11px 0px #19486214;
 
 
-    /* =========================================
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+/* Middle card */
+.testimonials-card:nth-child(3n + 2) {
+  transform: translateY(30px);
+}
+
+
+/* =========================================
        STARS
     ========================================= */
 
-    .testimonials-stars {
-      display: flex;
-      gap: 2px;
-      margin-bottom: 18px;
-      color: #ff6842;
-      font-size: 17px;
-      line-height: 1;
-    }
+.testimonials-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 18px;
+  color: #ff6842;
+  font-size: 17px;
+  line-height: 1;
+}
 
 
-    /* =========================================
+/* =========================================
        REVIEW TEXT
     ========================================= */
 
-    .testimonials-text {
-      color: #737373;
-      font-size: 13px;
-      line-height: 1.55;
-      min-height: 76px;
-      margin-bottom: 20px;
-    }
+.testimonials-text {
+  color: #737373;
+  font-size: 13px;
+  line-height: 1.55;
+  min-height: 76px;
+  margin-bottom: 20px;
+}
 
 
-    /* =========================================
+/* =========================================
        USER
     ========================================= */
 
-    .testimonials-user {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
+.testimonials-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    .testimonials-avatar {
-      width: 34px;
-      height: 34px;
-      flex: 0 0 34px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #dce5e8;
-    }
+.testimonials-avatar {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #dce5e8;
+}
 
-    .testimonials-user-info {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
+.testimonials-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
 
-    .testimonials-name {
-      color: #222;
-      font-size: 12px;
-      line-height: 1;
-      font-weight: 700;
-    }
+.testimonials-name {
+  color: #222;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+}
 
-    .testimonials-location {
-      color: #777;
-      font-size: 10px;
-      line-height: 1;
-    }
+.testimonials-location {
+  color: #777;
+  font-size: 10px;
+  line-height: 1;
+}
 
 
-    /* =========================================
+/* =========================================
        CONTROLS
     ========================================= */
 
-    .testimonials-controls {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 25px;
-    }
+.testimonials-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
 
-    .testimonials-arrow {
-      width: 30px;
-      height: 30px;
+.testimonials-arrow {
+  width: 30px;
+  height: 30px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-      border-radius: 50%;
-      border: 1px solid #194d68;
-      background: transparent;
-      color: #194d68;
+  border-radius: 50%;
+  border: 1px solid #194d68;
+  background: transparent;
+  color: #194d68;
 
-      cursor: pointer;
-      font-size: 17px;
-      line-height: 1;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1;
 
-      transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-    }
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
 
-    .testimonials-arrow:hover {
-      background: #194d68;
-      color: #ffffff;
-      transform: scale(1.05);
-    }
+.testimonials-arrow:hover {
+  background: #194d68;
+  color: #ffffff;
+  transform: scale(1.05);
+}
 
-    .testimonials-arrow-next {
-      background: #194d68;
-      color: #ffffff;
-    }
+.testimonials-arrow-next {
+  background: #194d68;
+  color: #ffffff;
+}
 
-    .testimonials-arrow-next:hover {
-      background: #123f56;
-    }
+.testimonials-arrow-next:hover {
+  background: #123f56;
+}
 
 
-    /* =========================================
+/* =========================================
        DOTS
     ========================================= */
 
-    .testimonials-dots {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+.testimonials-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-    .testimonials-dot {
-      width: 25px;
-      height: 3px;
-      padding: 0;
-      border: 0;
+.testimonials-dot {
+  width: 25px;
+  height: 3px;
+  padding: 0;
+  border: 0;
 
-      background: #e5ebed;
-      cursor: pointer;
+  background: #e5ebed;
+  cursor: pointer;
 
-      transition:
-        width 0.3s ease,
-        background 0.3s ease;
-    }
+  transition:
+    width 0.3s ease,
+    background 0.3s ease;
+}
 
-    .testimonials-dot.is-active {
-      width: 26px;
-      background: #194d68;
-    }
+.testimonials-dot.is-active {
+  width: 26px;
+  background: #194d68;
+}
 
 
-    /* =========================================
+/* =========================================
        TABLET
     ========================================= */
 
-    @media (max-width: 850px) {
+@media (max-width: 850px) {
 
-      .testimonials-section {
-        padding-top: 55px;
-      }
+  .testimonials-section {
+    padding-top: 55px;
+  }
 
-      .testimonials-track {
-        gap: 25px;
-      }
+  .testimonials-track {
+    gap: 25px;
+  }
 
-      .testimonials-card {
-        flex-basis: calc((100% - 25px) / 2);
-      }
+  .testimonials-card {
+    flex-basis: calc((100% - 25px) / 2);
+  }
 
-      .testimonials-card:nth-child(3n + 2) {
-        transform: none;
-      }
+  .testimonials-card:nth-child(3n + 2) {
+    transform: none;
+  }
 
-      .testimonials-card:nth-child(even) {
-        transform: translateY(25px);
-      }
+  .testimonials-card:nth-child(even) {
+    transform: translateY(25px);
+  }
 
-    }
+}
 
 
-    /* =========================================
+/* =========================================
        MOBILE
     ========================================= */
 
-    @media (max-width: 600px) {
+@media (max-width: 600px) {
 
-      .testimonials-section {
-        padding: 50px 16px 35px;
-      }
+  .testimonials-section {
+    padding: 50px 16px 35px;
+  }
 
-      .testimonials-header {
-        margin-bottom: 35px;
-      }
+  .testimonials-header {
+    margin-bottom: 35px;
+  }
 
-      .testimonials-label {
-        margin-bottom: 18px;
-      }
+  .testimonials-label {
+    margin-bottom: 18px;
+  }
 
-      .testimonials-title {
-        font-size: 30px;
-      }
+  .testimonials-title {
+    font-size: 30px;
+  }
 
-      .testimonials-subtitle {
-        font-size: 15px;
-      }
+  .testimonials-subtitle {
+    font-size: 15px;
+  }
 
-      .testimonials-track {
-        gap: 15px;
-      }
+  .testimonials-track {
+    gap: 15px;
+  }
 
-      .testimonials-card {
-        flex: 0 0 100%;
-        min-height: 220px;
-        padding: 25px 20px;
-      }
+  .testimonials-card {
+    flex: 0 0 100%;
+    min-height: 220px;
+    padding: 25px 20px;
+  }
 
-      .testimonials-card:nth-child(even) {
-        transform: none;
-      }
+  .testimonials-card:nth-child(even) {
+    transform: none;
+  }
 
-      .testimonials-controls {
-        margin-top: 15px;
-      }
+  .testimonials-controls {
+    margin-top: 15px;
+  }
 
-      .testimonials-dots {
-        gap: 5px;
-      }
+  .testimonials-dots {
+    gap: 5px;
+  }
 
-      .testimonials-dot {
-        width: 20px;
-      }
+  .testimonials-dot {
+    width: 20px;
+  }
 
-      .testimonials-dot.is-active {
-        width: 25px;
-      }
-    }
+  .testimonials-dot.is-active {
+    width: 25px;
+  }
+}
 
 
 
@@ -3711,10 +4126,7 @@ body {
   display: grid;
 
   grid-template-columns:
-    2.1fr
-    1fr
-    1fr
-    1.15fr;
+    2.1fr 1fr 1fr 1.15fr;
 
   column-gap: 45px;
 
@@ -3910,9 +4322,7 @@ body {
 
   .footer-main {
     grid-template-columns:
-      1.5fr
-      1fr
-      1fr;
+      1.5fr 1fr 1fr;
 
     row-gap: 40px;
   }
@@ -3951,10 +4361,10 @@ body {
   }
 
   .footer-logo-image {
-  display: block;
-  width: 55px;
-  height: auto;
-}
+    display: block;
+    width: 55px;
+    height: auto;
+  }
 
 
   .footer-brand {
