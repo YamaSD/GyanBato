@@ -3766,18 +3766,19 @@ em {
   margin-bottom: 48px;
 }
 
-.testimonials-label {
+.section-label {
   display: inline-block;
-  color: #ff6842;
-  font-size: 11px;
-  font-weight: 500;
+  color: #FF6B35;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 26px;
+  border-left: 1px solid #FF6B35;
 }
 
 .testimonials-title {
-  color: #194d68;
-  font-size: clamp(30px, 4vw, 42px);
+  color: #194862;
+  font-size: 32px;
   line-height: 1.15;
   font-weight: 700;
   margin-bottom: 20px;
@@ -3786,9 +3787,9 @@ em {
 .testimonials-subtitle {
   max-width: 480px;
   margin: 0 auto;
-  color: #444;
-  font-size: 17px;
-  line-height: 1.55;
+  color: #313131;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.3px;
 }
 
@@ -3853,7 +3854,7 @@ em {
   display: flex;
   gap: 2px;
   margin-bottom: 18px;
-  color: #ff6842;
+  color: #FF6B35;
   font-size: 17px;
   line-height: 1;
 }
@@ -3864,7 +3865,7 @@ em {
     ========================================= */
 
 .testimonials-text {
-  color: #737373;
+  color: #6C6C6C;
   font-size: 13px;
   line-height: 1.55;
   min-height: 76px;
@@ -3898,14 +3899,14 @@ em {
 }
 
 .testimonials-name {
-  color: #222;
-  font-size: 12px;
+  color: #000000;
+  font-size: 12.5px;
   line-height: 1;
   font-weight: 700;
 }
 
 .testimonials-location {
-  color: #777;
+  color: #505050;
   font-size: 10px;
   line-height: 1;
 }
@@ -3947,13 +3948,13 @@ em {
 }
 
 .testimonials-arrow:hover {
-  background: #194d68;
+  background: #194862;
   color: #ffffff;
   transform: scale(1.05);
 }
 
 .testimonials-arrow-next {
-  background: #194d68;
+  background: #194862;
   color: #ffffff;
 }
 
@@ -3992,7 +3993,7 @@ em {
 
 .testimonials-dot.is-active {
   width: 26px;
-  background: #194d68;
+  background: #194862;
 }
 
 
