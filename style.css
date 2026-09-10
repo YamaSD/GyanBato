@@ -447,1018 +447,206 @@ em {
 /* =========================
    Navbar
 ========================= */
-
+/* Navbar Styles */
 .navbar {
   width: 100%;
-  height: 102px;
-  background: #ffffff;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #eeeeee;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
-  max-width: 1410px;
-  height: 100%;
-  margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 25px;
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
-/* =========================
-   Logo
-========================= */
-
+/* Logo Styling */
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none;
+  gap: 6px;
 }
 
-.logo img {
-  width: 55px;
-  height: auto;
-  display: block;
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
 }
 
-/* =========================
-   Navigation Links
-========================= */
+.brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1C4D65;
+}
 
+.brand-sub {
+  font-size: 11px;
+  font-weight: 600;
+  color: #E26D3B;
+}
+
+/* Nav Menu & Links */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 38px;
+}
 
-  margin-left: auto;
-  margin-right: 45px;
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
 }
 
 .nav-link {
-  position: relative;
-
-  color: #555555;
   text-decoration: none;
-
-  font-size: 20px;
-  font-weight: 400;
-
-  padding: 10px 0;
-
-  transition: color 0.25s ease;
+  color: #4A5568;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 6px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #174c68;
+  color: #1C4D65;
 }
 
-/* Active underline */
-
+/* Active Link Underline */
 .nav-link.active {
-  color: #174c68;
+  color: #1C4D65;
+  font-weight: 600;
 }
-
+.logo img{
+  width: 43px;
+  height: 44px;
+}
 .nav-link.active::after {
   content: "";
-
   position: absolute;
+  bottom: 0;
   left: 0;
-  right: 0;
-  bottom: -1px;
-
-  height: 2px;
-  background: #174c68;
+  width: 100%;
+  height: 2.5px;
+  background-color: #1C4D65;
+  border-radius: 2px;
 }
 
-/* =========================
-   Join Button
-========================= */
-
-.join-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  min-width: 146px;
-  height: 48px;
-
-  padding: 0 20px;
-
-  background: #174c68;
+/* CTA Button */
+.btn-join {
+  display: inline-block;
+  background-color: #1C4D65;
   color: #ffffff;
-
-  border-radius: 10px;
-
+  padding: 10px 22px;
+  border-radius: 8px;
   text-decoration: none;
-
-  font-size: 19px;
-  font-weight: 400;
-
-  transition:
-    background 0.25s ease,
-    transform 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.join-btn:hover {
-  background: #103b51;
+.btn-join:hover {
+  background-color: #153a4c;
   transform: translateY(-1px);
 }
 
-/* =========================
-   Mobile Menu Button
-========================= */
-
-.menu-toggle {
+.mobile-cta {
   display: none;
+}
 
-  width: 42px;
-  height: 42px;
-
-  border: none;
-  background: transparent;
-
+/* Animated Hamburger Icon */
+.hamburger {
+  display: none;
   cursor: pointer;
-
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 5px;
+  z-index: 1001;
 }
 
-.menu-toggle span {
+.bar {
   width: 25px;
-  height: 2px;
-  background: #174c68;
-
-  transition: 0.3s ease;
+  height: 3px;
+  background-color: #1C4D65;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* =========================
-   Tablet
-========================= */
-
-@media (max-width: 1000px) {
-
-  .nav-menu {
-    gap: 22px;
-    margin-right: 25px;
-  }
-
-  .nav-link {
-    font-size: 17px;
-  }
-
-  .join-btn {
-    min-width: 125px;
-    height: 44px;
-    font-size: 16px;
-  }
+/* Hamburger Animation Transform when active */
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
-/* =========================
-   Mobile
-========================= */
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
 
-@media (max-width: 768px) {
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
-  .navbar {
-    height: 80px;
-  }
-
-  .nav-container {
-    padding: 0 20px;
-  }
-
-  .logo img {
-    width: 50px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    z-index: 1001;
-  }
-
-  .join-btn {
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 900px) {
+  .desktop-cta {
     display: none;
   }
 
-  .nav-menu {
-    position: absolute;
-
-    top: 80px;
-    left: 0;
-
-    width: 100%;
-
-    background: #ffffff;
-
+  .hamburger {
     display: flex;
+    justify-content: center;
+    
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     flex-direction: column;
-    align-items: center;
-
-    gap: 0;
-
-    margin: 0;
-    padding: 15px 0;
-
-    border-bottom: 1px solid #eeeeee;
-
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-
-    transition:
-      transform 0.3s ease,
-      opacity 0.3s ease;
+    justify-content: flex-start;
+    padding: 80px 30px 30px;
+    transition: right 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  .nav-menu.show {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .nav-link {
-    width: 100%;
-    text-align: center;
-
-    padding: 15px 0;
-
-    font-size: 18px;
-  }
-
-  .nav-link.active::after {
-    width: 50px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    bottom: 7px;
-  }
-
-  /* Hamburger animation */
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-}
-
-
-
-/* =========================================
-   HERO SECTION
-========================================= */
-
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 725px;
-
-  overflow: hidden;
-
-  background-color: #fffef0;
-
-  background-image:
-    linear-gradient(rgba(23, 76, 104, 0.055) 1px,
-      transparent 1px),
-    linear-gradient(90deg,
-      rgba(23, 76, 104, 0.055) 1px,
-      transparent 1px);
-
-  background-size: 64px 64px;
-
-  padding-top: 65px;
-}
-
-
-/* =========================================
-   HERO CONTENT
-========================================= */
-
-.hero-content {
-  position: relative;
-  z-index: 5;
-
-  max-width: 1200px;
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-
-.hero-eyebrow {
-  margin-bottom: 14px;
-
-  color: #174c68;
-
-  font-size: 12px;
-  font-weight: 500;
-
-  letter-spacing: 0.7px;
-}
-
-
-.hero-title {
-  margin-bottom: 13px;
-
-  color: #194e69;
-
-  font-size: clamp(42px, 5vw, 58px);
-  font-weight: 600;
-
-  line-height: 1.04;
-  letter-spacing: -1.5px;
-}
-
-
-.hero-title span {
-  color: #ff643c;
-}
-
-
-.hero-description {
-  margin-bottom: 25px;
-
-  color: #444;
-
-  font-size: 14px;
-  font-weight: 400;
-
-  line-height: 1.5;
-  letter-spacing: 0.3px;
-}
-
-
-/* =========================================
-   HERO BUTTONS
-========================================= */
-
-.hero-buttons {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  gap: 22px;
-}
-
-
-.hero-btn {
-  display: inline-flex;
-
-  align-items: center;
-  justify-content: center;
-
-  height: 29px;
-
-  padding: 0 10px;
-
-  border-radius: 5px;
-
-  text-decoration: none;
-
-  font-size: 11px;
-
-  transition: 0.25s ease;
-}
-
-
-/* Primary */
-
-.hero-btn-primary {
-  min-width: 97px;
-
-  background: #174c68;
-  color: #fff;
-
-  border: 1px solid #174c68;
-}
-
-
-.hero-btn-primary:hover {
-  background: #103b51;
-}
-
-
-.hero-btn-primary span {
-  margin-left: 3px;
-
-  font-size: 14px;
-}
-
-
-/* Secondary */
-
-.hero-btn-secondary {
-  min-width: 126px;
-
-  background: #fff;
-  color: #666;
-
-  border: 1px solid #ddd;
-}
-
-
-.hero-btn-secondary:hover {
-  color: #174c68;
-
-  border-color: #174c68;
-}
-
-
-.hero-play-icon {
-  width: 13px;
-  height: 13px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  margin-right: 2px;
-
-  padding-left: 1px;
-
-  border-radius: 50%;
-
-  background: #ff643c;
-  color: #fff;
-
-  font-size: 7px;
-}
-
-
-/* =========================================
-   HERO VISUAL
-========================================= */
-
-.hero-visual {
-  position: relative;
-
-  width: 850px;
-  height: 440px;
-
-  margin: 78px auto 0;
-}
-
-
-/* =========================================
-   HERO MAIN IMAGE
-========================================= */
-
-.hero-image-wrapper {
-  position: absolute;
-
-  left: 50%;
-  bottom: -2px;
-
-  z-index: 2;
-
-  width: 310px;
-  height: 310px;
-
-  padding: 16px 16px 0;
-
-  transform: translateX(-50%);
-
-  background: #fff;
-
-  border-radius: 50% 50% 0 0;
-}
-
-
-.hero-image-circle {
-  width: 100%;
-  height: 100%;
-
-  overflow: hidden;
-
-  border-radius: 50% 50% 0 0;
-}
-
-
-.hero-image-circle img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center top;
-}
-
-
-/* =========================================
-   HERO FLOATING CARDS
-========================================= */
-
-.hero-floating-card {
-  position: absolute;
-
-  z-index: 5;
-
-  background: #fff;
-
-  border: 1px solid #e9e9e9;
-
-  border-radius: 12px;
-
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-
-/* =========================================
-   STUDENTS CARD
-========================================= */
-
-.hero-students-card {
-  top: 20px;
-  left: 60px;
-
-  width: 81px;
-  height: 81px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  padding-top: 17px;
-}
-
-
-.hero-avatars {
-  display: flex;
-
-  margin-bottom: 4px;
-}
-
-
-.hero-avatar {
-  width: 21px;
-  height: 21px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  margin-left: -4px;
-
-  border: 2px solid #fff;
-  border-radius: 50%;
-
-  font-size: 13px;
-}
-
-
-.hero-avatar:first-child {
-  margin-left: 0;
-}
-
-
-.hero-avatar-1 {
-  background: #f6b65c;
-}
-
-.hero-avatar-2 {
-  background: #e88a5a;
-}
-
-.hero-avatar-3 {
-  background: #99d47a;
-}
-
-
-.hero-students-card strong {
-  color: #174c68;
-
-  font-size: 12px;
-  font-weight: 500;
-
-  letter-spacing: 0.4px;
-}
-
-
-.hero-students-card span {
-  color: #174c68;
-
-  font-size: 11px;
-
-  letter-spacing: 0.4px;
-}
-
-
-/* =========================================
-   MOCK EXAMS
-========================================= */
-
-.hero-exams-card {
-  top: 0;
-  right: 88px;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  background: transparent;
-
-  border: none;
-
-  box-shadow: none;
-}
-
-
-.hero-exam-icon {
-  width: 50px;
-  height: 50px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border: 7px solid #e3e9e5;
-  border-radius: 50%;
-
-  background: #174c68;
-
-  color: #f4d75e;
-
-  font-size: 22px;
-}
-
-
-.hero-exam-text strong {
-  display: block;
-
-  color: #555;
-
-  font-size: 12px;
-  font-weight: 500;
-}
-
-
-.hero-exam-text span {
-  display: block;
-
-  color: #555;
-
-  font-size: 12px;
-
-  letter-spacing: 0.4px;
-}
-
-
-/* =========================================
-   SMART MOCKTEST
-========================================= */
-
-.hero-smart-card {
-  position: absolute;
-
-  top: 100px;
-  right: 190px;
-
-  z-index: 5;
-
-  padding: 6px 11px;
-
-  color: #777;
-
-  background: #fff;
-
-  border-radius: 8px;
-
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-
-  font-size: 8px;
-
-  line-height: 1.35;
-  text-align: center;
-
-  letter-spacing: 0.3px;
-}
-
-
-/* =========================================
-   ANALYTICS
-========================================= */
-
-.hero-analytics-card {
-  position: absolute;
-
-  left: -57px;
-  bottom: 90px;
-
-  z-index: 5;
-
-  width: 148px;
-  height: 44px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 12px;
-
-  background: #fff;
-
-  border-radius: 6px;
-
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
-}
-
-
-.hero-analytics-text {
-  display: flex;
-
-  flex-direction: column;
-
-  text-align: center;
-}
-
-
-.hero-analytics-text span,
-.hero-analytics-text strong {
-  color: #666;
-
-  font-size: 11px;
-  font-weight: 400;
-
-  letter-spacing: 1px;
-}
-
-
-.hero-chart-icon {
-  color: #174c68;
-
-  font-size: 16px;
-
-  letter-spacing: -2px;
-}
-
-
-/* =========================================
-   TRUSTED BADGE
-========================================= */
-
-.hero-trusted-card {
-  position: absolute;
-
-  right: -7px;
-  bottom: 64px;
-
-  z-index: 6;
-
-  padding: 7px 15px;
-
-  background: #f4f6cf;
-
-  border-radius: 20px;
-
-  color: #174c68;
-
-  font-size: 10px;
-
-  letter-spacing: 0.5px;
-}
-
-
-.hero-trusted-card span {
-  margin-right: 6px;
-
-  font-size: 14px;
-}
-
-
-/* =========================================
-   DECORATIONS
-========================================= */
-
-.hero-dotted-arrow {
-  position: absolute;
-
-  top: 105px;
-  left: 115px;
-
-  z-index: 1;
-
-  color: #b4cbd2;
-
-  font-size: 75px;
-  font-weight: 200;
-
-  opacity: 0.8;
-
-  transform: rotate(45deg);
-}
-
-
-.hero-target-icon {
-  position: absolute;
-
-  right: 180px;
-  bottom: 145px;
-
-  z-index: 4;
-
-  color: #a9c3cb;
-
-  font-size: 31px;
-}
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
-@media (max-width: 900px) {
-
-  .hero {
-    padding-top: 55px;
-  }
-
-  .hero-content {
-    padding: 0 25px;
-  }
-
-  .hero-title {
-    font-size: 45px;
-  }
-
-  .hero-visual {
-    width: 700px;
-  }
-
-  .hero-students-card {
-    left: 25px;
-  }
-
-  .hero-exams-card {
-    right: 30px;
-  }
-
-  .hero-analytics-card {
-    left: 0;
-  }
-
-  .hero-trusted-card {
+  .nav-menu.active {
     right: 0;
   }
-}
 
-
-@media (max-width: 700px) {
-
-  .hero {
-    min-height: 750px;
-  }
-
-  .hero-title {
-    font-size: 37px;
-
-    line-height: 1.08;
-
-    letter-spacing: -1px;
-  }
-
-  .hero-description {
-    font-size: 13px;
-  }
-
-  .hero-description br {
-    display: none;
-  }
-
-  .hero-buttons {
-    gap: 10px;
-  }
-
-  .hero-visual {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
     width: 100%;
-    height: 390px;
-
-    margin-top: 70px;
   }
 
-  .hero-image-wrapper {
-    width: 270px;
-    height: 270px;
+  .nav-link {
+    font-size: 18px;
+    display: inline-block;
   }
 
-  .hero-students-card {
-    left: 5%;
-    top: 10px;
+  .mobile-cta {
+    display: block;
+    margin-top: 32px;
+    width: 100%;
   }
 
-  .hero-exams-card {
-    right: 3%;
-    top: 5px;
+  .mobile-cta .btn-join {
+    width: 100%;
+    text-align: center;
   }
-
-  .hero-smart-card {
-    right: 13%;
-    top: 95px;
-  }
-
-  .hero-analytics-card {
-    left: 2%;
-    bottom: 60px;
-  }
-
-  .hero-trusted-card {
-    right: 2%;
-    bottom: 30px;
-  }
-
-  .hero-dotted-arrow {
-    left: 20%;
-    top: 115px;
-
-    font-size: 55px;
-  }
-
-  .hero-target-icon {
-    right: 17%;
-    bottom: 125px;
+  .nav-container{
+        justify-content: space-between !important;
+    padding: 0 14px;
   }
 }
-
-
-@media (max-width: 480px) {
-
-  .hero {
-    min-height: 720px;
-    padding-top: 45px;
-  }
-
-  .hero-eyebrow {
-    font-size: 10px;
-  }
-
-  .hero-title {
-    font-size: 31px;
-  }
-
-  .hero-description {
-    font-size: 12px;
-  }
-
-  .hero-visual {
-    margin-top: 60px;
-  }
-
-  .hero-image-wrapper {
-    width: 230px;
-    height: 230px;
-
-    padding: 12px 12px 0;
-  }
-
-  .hero-students-card {
-    transform: scale(0.85);
-    transform-origin: top left;
-  }
-
-  .hero-exams-card {
-    transform: scale(0.8);
-    transform-origin: top right;
-  }
-
-  .hero-analytics-card {
-    transform: scale(0.8);
-    transform-origin: bottom left;
-  }
-
-  .hero-trusted-card {
-    transform: scale(0.8);
-    transform-origin: bottom right;
-  }
-
-  .hero-smart-card {
-    transform: scale(0.8);
-  }
-}
-
-
-
-
-
 
 /* =========================================
    PLATFORM FEATURES
@@ -1474,7 +662,7 @@ em {
 
 .platform-container {
   width: 100%;
-  max-width: 695px;
+  max-width: 1440px;
 
   margin: 0 auto;
 }
@@ -1498,7 +686,7 @@ em {
 
   color: #ff643c;
 
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 500;
 
   letter-spacing: 1.5px;
@@ -1521,8 +709,6 @@ em {
   margin: 0;
 
   color: #555;
-
-  font-size: 11px;
   font-weight: 400;
 
   line-height: 1.55;
@@ -1536,11 +722,11 @@ em {
 ========================================= */
 
 .platform-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
 }
 
 
@@ -1549,8 +735,10 @@ em {
 ========================================= */
 
 .platform-card {
-  min-height: 208px;
+  min-height: 300px;
+min-width: 396px;
 
+max-width:  396px;
   overflow: hidden;
 
   display: flex;
@@ -1584,25 +772,18 @@ em {
    CARD IMAGE / SVG AREA
 ========================================= */
 
-.platform-card-image {
-  width: 100%;
-  height: 113px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 13px 11px 0;
+.platform-card-image{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
 }
 
-
-.platform-card-image svg {
-  width: 100%;
-  height: 100%;
-
-  display: block;
+.platform-card-image img{
+min-width: 272px;
+max-width: 272px;
 }
+
 
 
 /* =========================================
@@ -1619,7 +800,7 @@ em {
 
   color: #174c68;
 
-  font-size: 11.5px;
+  font-size:20px;
   font-weight: 600;
 
   line-height: 1.2;
@@ -1631,7 +812,7 @@ em {
 
   color: #555;
 
-  font-size: 9.5px;
+  font-size: 16px;
   font-weight: 400;
 
   line-height: 1.7;
@@ -1671,24 +852,6 @@ em {
    TABLET
 ========================================= */
 
-@media (max-width: 800px) {
-
-  .platform-container {
-    max-width: 650px;
-  }
-
-  .platform-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-  }
-
-  .platform-card {
-    min-height: 215px;
-  }
-
-}
-
 
 /* =========================================
    MOBILE
@@ -1709,7 +872,7 @@ em {
   }
 
   .platform-subtitle {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .platform-desktop-break {
@@ -1756,7 +919,7 @@ em {
   }
 
   .platform-subtitle {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .platform-card {

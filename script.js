@@ -5,29 +5,30 @@ const faqItems = document.querySelectorAll(".faq-item");
     const faqAnswers = document.querySelectorAll(".faq-answer");
 
 
-// Toggle mobile menu
-menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    navMenu.classList.toggle("show");
-});
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+  const navLinks = document.querySelectorAll(".nav-link");
 
+  // Toggle mobile menu open/close on hamburger click
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
 
-// Active navigation link
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
+  // Close mobile menu when clicking any nav link
+  navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      // Handle Active State Switch
+      navLinks.forEach(item => item.classList.remove("active"));
+      this.classList.add("active");
 
-        navLinks.forEach(item => {
-            item.classList.remove("active");
-        });
-
-        link.classList.add("active");
-
-        // Close mobile menu
-        menuToggle.classList.remove("active");
-        navMenu.classList.remove("show");
+      // Close Menu
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
     });
+  });
 });
-
 
 // Process
 document.addEventListener("DOMContentLoaded", function () {

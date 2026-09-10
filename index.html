@@ -8,162 +8,149 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="style2.css?v=6">
+
 </head>
 
 <body>
     <!-- Navbar -->
-    <header class="navbar">
-        <div class="nav-container">
-
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <img src="assets/nav_footer/gyan_logo.svg" alt="Gyan Bato Logo" />
-            </a>
-
-            <!-- Navigation -->
-            <nav class="nav-menu" id="navMenu">
-                <a href="#" class="nav-link active">Home</a>
-                <a href="#" class="nav-link">How it works</a>
-                <a href="#" class="nav-link">Features</a>
-                <a href="#" class="nav-link">Testimonials</a>
-                <a href="#" class="nav-link">Help</a>
-                <a href="#" class="nav-link">Login</a>
-            </nav>
-
-            <!-- CTA -->
-            <a href="#" class="join-btn">Join for Free</a>
-
-            <!-- Mobile menu button -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                <span>How it works</span>
-                <span>Features</span>
-                <span>Login</span>
-            </button>
-
+<header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Logo Section -->
+      <a href="#" class="logo">
+<img src="assets/logo.png" alt="">
+        <div class="logo-text">
+          <span class="brand-name">Gyan</span>
+          <span class="brand-sub">Sato</span>
         </div>
-    </header>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">How it works</a></li>
+          <li><a href="#" class="nav-link">Features</a></li>
+          <li><a href="#" class="nav-link">Testimonials</a></li>
+          <li><a href="#" class="nav-link">Help</a></li>
+          <li><a href="#" class="nav-link">Login</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="#" class="btn-join">Join for Free</a>
+        </div>
+      </nav>
+
+      <!-- CTA Button (Desktop) -->
+      <div class="desktop-cta">
+        <a href="#" class="btn-join">Join for Free</a>
+      </div>
+
+      <!-- Hamburger Menu Toggle Icon -->
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </div>
+  </header>
 
     <!-- Hero -->
-    <section class="hero">
+<section class="hero" id="hero">
 
-        <!-- Hero Content -->
-        <div class="hero-content">
+  <!-- Decorative grid + glow background -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg__grid"></div>
+    <div class="hero-bg__glow"></div>
+  </div>
 
-            <div class="hero-eyebrow">
-                # Your Competitive Exam Partner
-            </div>
+  <div class="hero-inner">
 
-            <h1 class="hero-title">
-                Where Smart Preparation<br>
-                Meets <span>Higher</span> Scores
-            </h1>
+    <!-- ===== Top text content ===== -->
+    <div class="hero-content">
+      <span class="hero-eyebrow" data-anim="fade-down"># Your Competitive Exam Partner</span>
 
-            <p class="hero-description">
-                Everything from structured practice to mock exams and analytics<br>
-                designed to help you perform your best in entrance and banking exams.
-            </p>
+      <h1 class="hero-title" data-anim="fade-up">
+        Where Smart Preparation<br class="hide-mobile">
+        Meets <span class="hero-title__accent">Higher</span> Scores
+      </h1>
 
-            <div class="hero-buttons">
+      <p class="hero-subtitle" data-anim="fade-up">
+        Everything from structured practice to mock exams and analytics
+        designed to help you perform your best in entrance and banking exams.
+      </p>
 
-                <a href="#" class="hero-btn hero-btn-primary">
-                    Join for Free
-                    <span>→</span>
-                </a>
+      <div class="hero-cta" data-anim="fade-up">
+        <a href="#" class="btn btn--primary">
+          Join for Free
+          <img src="assets/icons/icon-arrow.svg" alt="" class="btn__arrow">
+        </a>
+        <a href="#" class="btn btn--secondary">
+          <img src="assets/icons/icon-play.svg" alt="" class="btn__play">
+          Explore Exams
+        </a>
+      </div>
+    </div>
 
-                <a href="#" class="hero-btn hero-btn-secondary">
-                    <span class="hero-play-icon">▶</span>
-                    Explore Exams
-                </a>
+    <!-- ===== Visual / stage ===== -->
+    <div class="hero-stage">
 
-            </div>
+      <!-- soft dome glow behind the photo -->
+      <img class="stage-glow" data-anim="scale-in" src="assets/icons/glow-dome.svg" alt="">
 
+      <!-- Center arch photo -->
+      <div class="stage-photo" data-anim="scale-in">
+        <div class="stage-photo__frame">
+          <img src="assets/images/hero-student.png" alt="Smiling student holding a notebook and showing the exam-prep app on her phone">
         </div>
+      </div>
 
+      <!-- decorative dashed connectors (original Figma assets) -->
+      <img class="decor decor--swirl" data-anim="fade-in" src="assets/icons/decor-swirl.svg" alt="">
+      <img class="decor decor--hook" data-anim="fade-in" src="assets/icons/decor-hook.svg" alt="">
+      <img class="decor decor--target" data-anim="fade-in" src="assets/icons/icon-target.svg" alt="">
 
-        <!-- Hero Visual -->
-        <div class="hero-visual">
-
-            <!-- Students Card -->
-            <div class="hero-floating-card hero-students-card">
-
-                <div class="hero-avatars">
-                    <div class="hero-avatar hero-avatar-1">👨🏻</div>
-                    <div class="hero-avatar hero-avatar-2">👩🏻</div>
-                    <div class="hero-avatar hero-avatar-3">👩🏻‍🎓</div>
-                </div>
-
-                <strong>30k+</strong>
-                <span>Students</span>
-
-            </div>
-
-
-            <!-- Mock Exams -->
-            <div class="hero-floating-card hero-exams-card">
-
-                <div class="hero-exam-icon">
-                    ▤
-                </div>
-
-                <div class="hero-exam-text">
-                    <strong>5000+</strong>
-                    <span>Mock Exams</span>
-                </div>
-
-            </div>
-
-
-            <!-- Main Image -->
-            <div class="hero-image-wrapper">
-
-                <div class="hero-image-circle">
-                    <img src="assets/hero_media/student_hero.png" alt="Student preparing for exams">
-                </div>
-
-            </div>
-
-
-            <!-- Smart Mocktest -->
-            <div class="hero-smart-card">
-                Smart<br>
-                Mocktest
-            </div>
-
-
-            <!-- Analytics -->
-            <div class="hero-analytics-card">
-
-                <div class="hero-analytics-text">
-                    <span>Performance</span>
-                    <strong>Analytics</strong>
-                </div>
-
-                <div class="hero-chart-icon">
-                    ▂▅▇
-                </div>
-
-            </div>
-
-
-            <!-- Trusted Badge -->
-            <div class="hero-trusted-card">
-                <span>★</span>
-                Trusted by 30k+ students
-            </div>
-
-
-            <!-- Decorations -->
-            <div class="hero-dotted-arrow">
-                ↝
-            </div>
-
-            <div class="hero-target-icon">
-                ◎
-            </div>
-
+      <!-- Card: 30k+ Students -->
+      <div class="card card--students" data-anim="float-in" data-float>
+        <div class="avatars">
+          <img src="assets/images/avatar-1.png" alt="Student avatar">
+          <img src="assets/images/avatar-2.png" alt="Student avatar">
+          <img src="assets/images/avatar-3.png" alt="Student avatar">
         </div>
+        <p class="card__label">30k+<br>Students</p>
+      </div>
 
-    </section>
+      <!-- Badge: 5000+ Mock Exams -->
+      <div class="badge badge--mockexams" data-anim="float-in" data-float>
+        <img class="badge__icon" src="assets/icons/icon-mockexams.svg" alt="">
+        <p class="badge__text"><strong>5000+</strong><br>Mock Exams</p>
+      </div>
+
+      <!-- Pill: Smart Mocktest -->
+      <div class="pill pill--smart" data-anim="float-in" data-float>Smart<br>Mocktest</div>
+
+      <!-- Card: Performance Analytics -->
+      <div class="card card--performance">
+        <p class="card__label card__label--left">Performance<br>Analytics</p>
+        <span class="card__icon">
+          <img src="assets/icons/icon-barchart.svg" alt="">
+        </span>
+      </div>
+
+      <!-- Pill: Trusted by 30k+ students -->
+      <div class="pill pill--trusted" data-anim="float-in" data-float>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#194862" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.5L14.9 8.7L21.8 9.6L16.8 14.3L18.1 21.1L12 17.7L5.9 21.1L7.2 14.3L2.2 9.6L9.1 8.7L12 2.5Z"/>
+        </svg>
+        Trusted by 30k+ students
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Platform Features -->
     <section class="platform-features">
@@ -202,45 +189,7 @@
 
                     <div class="platform-card-image">
 
-                        <svg class="platform-practice-svg" viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-
-                            <!-- Background -->
-                            <rect x="0" y="0" width="300" height="130" fill="transparent" />
-
-                            <!-- Difficulty blocks -->
-                            <rect x="28" y="86" width="45" height="25" rx="6" fill="#e5f8e7" />
-
-                            <rect x="78" y="70" width="45" height="41" rx="6" fill="#f8f5dc" />
-
-                            <rect x="128" y="46" width="45" height="65" rx="6" fill="#dceaff" />
-
-                            <rect x="178" y="22" width="45" height="89" rx="6" fill="#ffd9c9" />
-
-                            <!-- Labels -->
-                            <text x="50" y="101" text-anchor="middle" font-size="6" fill="#444">
-                                Beginner
-                            </text>
-
-                            <text x="100" y="91" text-anchor="middle" font-size="6" fill="#444">
-                                Medium
-                            </text>
-
-                            <text x="150" y="76" text-anchor="middle" font-size="6" fill="#444">
-                                Pro
-                            </text>
-
-                            <text x="200" y="68" text-anchor="middle" font-size="6" fill="#444">
-                                High
-                            </text>
-
-                            <!-- Progress curve -->
-                            <path d="M28 76
-                 C72 73, 110 67, 143 57
-                 C175 47, 199 34, 224 12" fill="none" stroke="#999" stroke-width="1" />
-
-                        </svg>
-
-                    </div>
+                   <img src="assets/platFormFeature/platFormFeature1.png" alt="img">
 
                     <div class="platform-card-content">
 
@@ -1550,6 +1499,8 @@
 
 
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
