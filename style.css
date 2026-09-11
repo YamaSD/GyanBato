@@ -776,8 +776,6 @@ em {
 
 .platform-card {
   min-height: 300px;
-  min-width: 396px;
-
   max-width: 396px;
   overflow: hidden;
 
@@ -1007,7 +1005,6 @@ em {
 ========================================= */
 
 .process-steps-card {
-  min-width: 464px;
   min-height: 304px;
   padding: 30px 40px;
 
@@ -3034,7 +3031,7 @@ em {
 }
 
 .faq-container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -3261,7 +3258,7 @@ em {
 
 .testimonials-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -3579,7 +3576,7 @@ em {
 
 .footer-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   min-height: 355px;
   margin: 0 auto;
 
