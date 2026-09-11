@@ -1913,8 +1913,6 @@ em {
 
   .process-slide-info {
     width: 100%;
-
-    text-align: center;
   }
 
   .process-slide-title {
@@ -1923,10 +1921,6 @@ em {
 
   .process-slide-description {
     margin-bottom: 15px;
-  }
-
-  .process-feature {
-    justify-content: center;
   }
 
   .process-illustration {
@@ -1956,9 +1950,7 @@ em {
     font-size: 12px;
   }
 
-  .process-slide-description {
-    font-size: 9px;
-  }
+
 }
 
 /* =========================================
@@ -2320,9 +2312,6 @@ em {
     display: none;
   }
 
-  .cta-title {
-    font-size: 25px;
-  }
 
   .cta-description {
     font-size: 13px;
@@ -2344,9 +2333,6 @@ em {
 
 @media (max-width: 380px) {
 
-  .cta-title {
-    font-size: 22px;
-  }
 
   .cta-actions {
     gap: 7px;
@@ -2491,8 +2477,6 @@ em {
   margin-top: 2px;
 
   color: #626262;
-
-  font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 30px;
@@ -2614,7 +2598,7 @@ em {
 
   font-size: 16px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 1px;
 }
 
@@ -3865,4 +3849,66 @@ em {
     padding-top: 0;
   }
 
+}
+
+@media (max-width: 900px) {
+    .process-steps-title {
+          font-size: 15px !important;
+    }
+.process-feature p{
+text-align: start !important;
+}
+.process-feature-point{
+font-size: 14px !important;
+}
+.process-slide-title{
+margin:0 !important;
+}
+.cta-title{
+	        font-size: 19px !important;
+}
+.cta-button {
+    font-size: 12px !important;
+}
+    .section-title {
+        font-size: 22px !important;
+    }
+.exam-stat-label {
+    font-size: 14px !important;
+}
+
+.exam-card-title {
+    font-size: 15px !important;
+}
+.exam-feature-content p{
+    font-size: 15px !important;
+}
+.exam-feature-content span {
+    font-size: 13px !important;
+}
+.exam-other-content p {
+	    font-size: 14px !important;
+}
+.exam-card-description{
+  font-size: 13px !important;
+}
+  .process-slide-description {
+    font-size: 11px;
+  }
+}
+
+  .process-carousel.swiper {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.process-carousel .swiper-wrapper {
+    height: auto !important;
+}
+
+.process-carousel .swiper-slide {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
 }
