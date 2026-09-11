@@ -719,43 +719,6 @@ em {
 }
 
 
-.platform-eyebrow {
-  display: block;
-
-  margin-bottom: 15px;
-
-  color: #ff643c;
-
-  font-size: 14px;
-  font-weight: 500;
-
-  letter-spacing: 1.5px;
-}
-
-
-.platform-title {
-  margin: 0 0 11px;
-
-  color: #194e69;
-
-  font-size: 20px;
-  font-weight: 600;
-
-  line-height: 1.25;
-}
-
-
-.platform-subtitle {
-  margin: 0;
-
-  color: #555;
-  font-weight: 400;
-
-  line-height: 1.55;
-
-  letter-spacing: 0.35px;
-}
-
 
 /* =========================================
    CARD GRID
@@ -780,13 +743,11 @@ em {
   overflow: hidden;
 
   display: flex;
-
   flex-direction: column;
-
+  justify-content: center;
   background: #ffffff;
 
   border: 1px solid #e7e9e9;
-
   border-radius: 9px;
 
   transition:
@@ -829,31 +790,30 @@ em {
 ========================================= */
 
 .platform-card-content {
-  padding: 6px 11px 13px;
+  padding: 20px;
 }
 
 
 .platform-card-title {
   margin: 0 0 8px;
 
-  color: #174c68;
+  color: #194862;
 
   font-size: 20px;
   font-weight: 600;
 
-  line-height: 1.2;
+  line-height: 64px;
 }
 
 
 .platform-card-description {
   margin: 0;
 
-  color: #555;
+  color: #313131;
 
   font-size: 16px;
-  font-weight: 400;
-
-  line-height: 1.7;
+  font-weight: 400; 
+  line-height: 30px;
 }
 
 
@@ -984,7 +944,7 @@ em {
 }
 
 .process-container {
-  width: min(100%, 1100px);
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -1403,17 +1363,21 @@ em {
 
 .process-illustration {
   position: relative;
-
   display: flex;
   justify-content: center;
 
-  height: 246px;
+  height: 100%;
 
   margin-left: auto;
 
   border-radius: 10px;
 
   flex-shrink: 0;
+}
+
+.process-illustration img {
+  width: 90%;
+  height: 90%;
 }
 
 

@@ -16,8 +16,8 @@
   --text-gray:   #626262;
   --text-gray-2: #6D6D6D;
 
-  --font-heading: 'Poppins', sans-serif;
-  --font-body:    'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Open Sans', sans-serif;
 }
 
 *{ box-sizing: border-box; }
@@ -87,8 +87,8 @@ body{
 .hero-eyebrow{
   display: inline-block;
   font-family: var(--font-body);
-  font-weight: 600;
-  font-size: clamp(12px, 1.1vw, 15px);
+  font-weight: 500;
+  font-size: clamp(12px, 1.1vw, 16px);
   letter-spacing: .04em;
   color: var(--navy);
   margin-bottom: 14px;
@@ -96,11 +96,11 @@ body{
 
 .hero-title{
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 600;
   color: var(--navy-dark);
   line-height: 1.08;
   letter-spacing: -0.01em;
-  font-size: clamp(30px, 5.2vw, 60px);
+  font-size: clamp(30px, 5.2vw, 64px);
   margin: 0 0 20px;
 }
 
@@ -111,8 +111,8 @@ body{
 .hero-subtitle{
   font-family: var(--font-body);
   font-weight: 400;
-  color: var(--text-gray-2);
-  font-size: clamp(14px, 1.35vw, 18px);
+  color: #313131;
+  font-size: clamp(14px, 1.35vw, 20px);
   line-height: 1.6;
   max-width: 640px;
   margin: 0 auto 32px;
@@ -123,7 +123,7 @@ body{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 36px;
   margin-bottom: clamp(32px, 6vw, 64px);
 }
 
@@ -131,11 +131,10 @@ body{
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(14px, 1.1vw, 16px);
   padding: 14px 24px;
-  border-radius: 999px;
+  border-radius: Radius/200;
   text-decoration: none;
   transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
   white-space: nowrap;
@@ -147,8 +146,8 @@ body{
   box-shadow: 0 10px 24px -8px rgba(25, 72, 98, .55);
 }
 .btn--primary:hover{
-  background: var(--navy-dark);
-  transform: translateY(-2px);
+  box-shadow: 0 8px 22px -6px rgba(0,0,0,.16);
+
 }
 
 .btn--secondary{
@@ -157,8 +156,8 @@ body{
   box-shadow: 0 4px 18px -6px rgba(0,0,0,.12);
 }
 .btn--secondary:hover{
-  transform: translateY(-2px);
   box-shadow: 0 8px 22px -6px rgba(0,0,0,.16);
+  color: rgb(161, 161, 161);
 }
 
 .btn__play{
