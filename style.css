@@ -492,7 +492,10 @@ em {
   position: sticky;
   top: 0;
   z-index: 1000;
+      min-height: 84px;
+    display: flex;
 }
+
 
 .nav-container {
   display: flex;
@@ -632,7 +635,7 @@ em {
 /* Responsive Styles for Mobile */
 @media screen and (max-width: 900px) {
   .desktop-cta {
-    display: none;
+    display: none !important;
   }
 
   .hamburger {
@@ -3897,18 +3900,3 @@ margin:0 !important;
   }
 }
 
-  .process-carousel.swiper {
-    height: auto !important;
-    min-height: 0 !important;
-}
-
-.process-carousel .swiper-wrapper {
-    height: auto !important;
-}
-
-.process-carousel .swiper-slide {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
-}
