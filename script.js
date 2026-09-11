@@ -5,6 +5,7 @@ const faqItems = document.querySelectorAll(".faq-item");
     const faqAnswers = document.querySelectorAll(".faq-answer");
 
 
+// Toggle mobile menu open/close on hamburger click
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const navMenu = document.getElementById("nav-menu");
@@ -32,38 +33,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Process
 document.addEventListener("DOMContentLoaded", function () {
+
     const processSteps = document.querySelectorAll(".process-step");
-    const processTrack = document.querySelector(".process-track");
 
-    if (!processSteps.length || !processTrack) return;
+    if (!processSteps.length) return;
 
-    let processCurrentStep = 0;
+    const processSwiper = new Swiper(".process-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 0,
 
-    function processGoToStep(index) {
-        processCurrentStep = index;
+        speed: 500,
 
-        // Move carousel
-        processTrack.style.transform =
-            `translateX(-${index * 25}%)`;
+        // Enable mouse/touch dragging
+        allowTouchMove: true,
 
-        // Update active step
+        // Don't loop unless you specifically want
+        // step 4 -> step 1 behavior
+        loop: false,
+
+        // Optional
+        grabCursor: true,
+
+        on: {
+            init: function () {
+                updateProcessStep(this.activeIndex);
+            },
+
+            slideChange: function () {
+                updateProcessStep(this.activeIndex);
+            }
+        }
+    });
+
+
+    function updateProcessStep(index) {
+
         processSteps.forEach((step, stepIndex) => {
+
             step.classList.toggle(
                 "process-step-active",
                 stepIndex === index
             );
+
         });
+
     }
 
+
+    // Click step navigation
     processSteps.forEach((step, index) => {
+
         step.addEventListener("click", function () {
-            processGoToStep(index);
+            processSwiper.slideTo(index);
         });
+
     });
 
-    // Initialize
-    processGoToStep(0);
 });
+
 
 
 // Faq accordion

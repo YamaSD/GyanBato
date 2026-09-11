@@ -7,149 +7,154 @@
     <title>GyanBato</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
-    
-<link rel="stylesheet" href="style2.css?v=6">
+
+    <link rel="stylesheet" href="style2.css?v=6">
 
 </head>
 
 <body>
     <!-- Navbar -->
-<header class="navbar">
-    <div class="nav-container">
-      
-      <!-- Logo Section -->
-      <a href="#" class="logo">
-<img src="assets/logo.png" alt="">
-        <div class="logo-text">
-          <span class="brand-name">Gyan</span>
-          <span class="brand-sub">Sato</span>
+    <header class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo Section -->
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="">
+                <div class="logo-text">
+                    <span class="brand-name">Gyan</span>
+                    <span class="brand-sub">Sato</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">How it works</a></li>
+                    <li><a href="#" class="nav-link">Features</a></li>
+                    <li><a href="#" class="nav-link">Testimonials</a></li>
+                    <li><a href="#" class="nav-link">Help</a></li>
+                    <li><a href="#" class="nav-link">Login</a></li>
+                </ul>
+                <div class="mobile-cta">
+                    <a href="#" class="btn-join">Join for Free</a>
+                </div>
+            </nav>
+
+            <!-- CTA Button (Desktop) -->
+            <div class="desktop-cta">
+                <a href="#" class="btn-join">Join for Free</a>
+            </div>
+
+            <!-- Hamburger Menu Toggle Icon -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
         </div>
-      </a>
-
-      <!-- Navigation Links -->
-      <nav class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link active">Home</a></li>
-          <li><a href="#" class="nav-link">How it works</a></li>
-          <li><a href="#" class="nav-link">Features</a></li>
-          <li><a href="#" class="nav-link">Testimonials</a></li>
-          <li><a href="#" class="nav-link">Help</a></li>
-          <li><a href="#" class="nav-link">Login</a></li>
-        </ul>
-        <div class="mobile-cta">
-          <a href="#" class="btn-join">Join for Free</a>
-        </div>
-      </nav>
-
-      <!-- CTA Button (Desktop) -->
-      <div class="desktop-cta">
-        <a href="#" class="btn-join">Join for Free</a>
-      </div>
-
-      <!-- Hamburger Menu Toggle Icon -->
-      <div class="hamburger" id="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-
-    </div>
-  </header>
+    </header>
 
     <!-- Hero -->
-<section class="hero" id="hero">
+    <section class="hero" id="hero">
 
-  <!-- Decorative grid + glow background -->
-  <div class="hero-bg" aria-hidden="true">
-    <div class="hero-bg__grid"></div>
-    <div class="hero-bg__glow"></div>
-  </div>
-
-  <div class="hero-inner">
-
-    <!-- ===== Top text content ===== -->
-    <div class="hero-content">
-      <span class="hero-eyebrow" data-anim="fade-down"># Your Competitive Exam Partner</span>
-
-      <h1 class="hero-title" data-anim="fade-up">
-        Where Smart Preparation<br class="hide-mobile">
-        Meets <span class="hero-title__accent">Higher</span> Scores
-      </h1>
-
-      <p class="hero-subtitle" data-anim="fade-up">
-        Everything from structured practice to mock exams and analytics
-        designed to help you perform your best in entrance and banking exams.
-      </p>
-
-      <div class="hero-cta" data-anim="fade-up">
-        <a href="#" class="btn btn--primary">
-          Join for Free
-          <img src="assets/icons/icon-arrow.svg" alt="" class="btn__arrow">
-        </a>
-        <a href="#" class="btn btn--secondary">
-          <img src="assets/icons/icon-play.svg" alt="" class="btn__play">
-          Explore Exams
-        </a>
-      </div>
-    </div>
-
-    <!-- ===== Visual / stage ===== -->
-    <div class="hero-stage">
-
-      <!-- soft dome glow behind the photo -->
-      <img class="stage-glow" data-anim="scale-in" src="assets/icons/glow-dome.svg" alt="">
-
-      <!-- Center arch photo -->
-      <div class="stage-photo" data-anim="scale-in">
-        <div class="stage-photo__frame">
-          <img src="assets/images/hero-student.png" alt="Smiling student holding a notebook and showing the exam-prep app on her phone">
+        <!-- Decorative grid + glow background -->
+        <div class="hero-bg" aria-hidden="true">
+            <div class="hero-bg__grid"></div>
+            <div class="hero-bg__glow"></div>
         </div>
-      </div>
 
-      <!-- decorative dashed connectors (original Figma assets) -->
-      <img class="decor decor--swirl" data-anim="fade-in" src="assets/icons/decor-swirl.svg" alt="">
-      <img class="decor decor--hook" data-anim="fade-in" src="assets/icons/decor-hook.svg" alt="">
-      <img class="decor decor--target" data-anim="fade-in" src="assets/icons/icon-target.svg" alt="">
+        <div class="hero-inner">
 
-      <!-- Card: 30k+ Students -->
-      <div class="card card--students" data-anim="float-in" data-float>
-        <div class="avatars">
-          <img src="assets/images/avatar-1.png" alt="Student avatar">
-          <img src="assets/images/avatar-2.png" alt="Student avatar">
-          <img src="assets/images/avatar-3.png" alt="Student avatar">
+            <!-- ===== Top text content ===== -->
+            <div class="hero-content">
+                <span class="hero-eyebrow" data-anim="fade-down"># Your Competitive Exam Partner</span>
+
+                <h1 class="hero-title" data-anim="fade-up">
+                    Where Smart Preparation<br class="hide-mobile">
+                    Meets <span class="hero-title__accent">Higher</span> Scores
+                </h1>
+
+                <p class="hero-subtitle" data-anim="fade-up">
+                    Everything from structured practice to mock exams and analytics
+                    designed to help you perform your best in entrance and banking exams.
+                </p>
+
+                <div class="hero-cta" data-anim="fade-up">
+                    <a href="#" class="btn btn--primary">
+                        Join for Free
+                        <img src="assets/icons/icon-arrow.svg" alt="" class="btn__arrow">
+                    </a>
+                    <a href="#" class="btn btn--secondary">
+                        <img src="assets/icons/icon-play.svg" alt="" class="btn__play">
+                        Explore Exams
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===== Visual / stage ===== -->
+            <div class="hero-stage">
+
+                <!-- soft dome glow behind the photo -->
+                <img class="stage-glow" data-anim="scale-in" src="assets/icons/glow-dome.svg" alt="">
+
+                <!-- Center arch photo -->
+                <div class="stage-photo" data-anim="scale-in">
+                    <div class="stage-photo__frame">
+                        <img src="assets/images/hero-student.png"
+                            alt="Smiling student holding a notebook and showing the exam-prep app on her phone">
+                    </div>
+                </div>
+
+                <!-- decorative dashed connectors (original Figma assets) -->
+                <img class="decor decor--swirl" data-anim="fade-in" src="assets/icons/decor-swirl.svg" alt="">
+                <img class="decor decor--hook" data-anim="fade-in" src="assets/icons/decor-hook.svg" alt="">
+                <img class="decor decor--target" data-anim="fade-in" src="assets/icons/icon-target.svg" alt="">
+
+                <!-- Card: 30k+ Students -->
+                <div class="card card--students" data-anim="float-in" data-float>
+                    <div class="avatars">
+                        <img src="assets/images/avatar-1.png" alt="Student avatar">
+                        <img src="assets/images/avatar-2.png" alt="Student avatar">
+                        <img src="assets/images/avatar-3.png" alt="Student avatar">
+                    </div>
+                    <p class="card__label">30k+<br>Students</p>
+                </div>
+
+                <!-- Badge: 5000+ Mock Exams -->
+                <div class="badge badge--mockexams" data-anim="float-in" data-float>
+                    <img class="badge__icon" src="assets/icons/icon-mockexams.svg" alt="">
+                    <p class="badge__text">
+                    <p>5000+</p><br>Mock Exams</p>
+                </div>
+
+                <!-- Pill: Smart Mocktest -->
+                <div class="pill pill--smart" data-anim="float-in" data-float>Smart<br>Mocktest</div>
+
+                <!-- Card: Performance Analytics -->
+                <div class="card card--performance">
+                    <p class="card__label card__label--left">Performance<br>Analytics</p>
+                    <span class="card__icon">
+                        <img src="assets/icons/icon-barchart.svg" alt="">
+                    </span>
+                </div>
+
+                <!-- Pill: Trusted by 30k+ students -->
+                <div class="pill pill--trusted" data-anim="float-in" data-float>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#194862" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.5L14.9 8.7L21.8 9.6L16.8 14.3L18.1 21.1L12 17.7L5.9 21.1L7.2 14.3L2.2 9.6L9.1 8.7L12 2.5Z" />
+                    </svg>
+                    Trusted by 30k+ students
+                </div>
+
+            </div>
         </div>
-        <p class="card__label">30k+<br>Students</p>
-      </div>
-
-      <!-- Badge: 5000+ Mock Exams -->
-      <div class="badge badge--mockexams" data-anim="float-in" data-float>
-        <img class="badge__icon" src="assets/icons/icon-mockexams.svg" alt="">
-        <p class="badge__text"><strong>5000+</strong><br>Mock Exams</p>
-      </div>
-
-      <!-- Pill: Smart Mocktest -->
-      <div class="pill pill--smart" data-anim="float-in" data-float>Smart<br>Mocktest</div>
-
-      <!-- Card: Performance Analytics -->
-      <div class="card card--performance">
-        <p class="card__label card__label--left">Performance<br>Analytics</p>
-        <span class="card__icon">
-          <img src="assets/icons/icon-barchart.svg" alt="">
-        </span>
-      </div>
-
-      <!-- Pill: Trusted by 30k+ students -->
-      <div class="pill pill--trusted" data-anim="float-in" data-float>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="#194862" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2.5L14.9 8.7L21.8 9.6L16.8 14.3L18.1 21.1L12 17.7L5.9 21.1L7.2 14.3L2.2 9.6L9.1 8.7L12 2.5Z"/>
-        </svg>
-        Trusted by 30k+ students
-      </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!-- Platform Features -->
@@ -161,7 +166,7 @@
             <div class="platform-heading">
 
                 <span class="platform-eyebrow">
-                    | PLATFORM FEATURES
+                    PLATFORM FEATURES
                 </span>
 
                 <h2 class="platform-title">
@@ -170,7 +175,6 @@
 
                 <p class="platform-subtitle">
                     Prepare with confidence using powerful tools, detailed analytics, adaptive
-                    <br class="platform-desktop-break">
                     practice, and personalized guidance built to maximize your potential.
                 </p>
 
@@ -189,20 +193,20 @@
 
                     <div class="platform-card-image">
 
-                   <img src="assets/platFormFeature/platFormFeature1.png" alt="img">
+                        <img src="assets/platFormFeature/platFormFeature1.png" alt="img">
 
-                    <div class="platform-card-content">
+                        <div class="platform-card-content">
 
-                        <h3 class="platform-card-title">
-                            Level-Based Practice
-                        </h3>
+                            <h3 class="platform-card-title">
+                                Level-Based Practice
+                            </h3>
 
-                        <p class="platform-card-description">
-                            Progressive difficulty levels that adapt to your skill.
-                            Master basics before tackling advanced problems.
-                        </p>
+                            <p class="platform-card-description">
+                                Progressive difficulty levels that adapt to your skill.
+                                Master basics before tackling advanced problems.
+                            </p>
 
-                    </div>
+                        </div>
 
                 </article>
 
@@ -547,14 +551,15 @@
         <div class="process-container">
 
             <!-- Header -->
-            <div class="process-header">
-                <span class="process-eyebrow">EASY PROCESS</span>
+            <div class="section-header">
+                <span class="section-label font-opensans-600">EASY PROCESS</span>
 
-                <h2 class="process-title">How it works</h2>
+                <h2 class="section-title font-montserrat-600">
+                    How it works
+                </h2>
 
-                <p class="process-description">
+                <p class="section-subtitle font-opensans-400">
                     Master your syllabus with structured learning paths, real exam-level
-                    <br class="process-desktop-break">
                     practice, mock tests, and performance analytics all in one platform.
                 </p>
             </div>
@@ -565,18 +570,18 @@
                 <!-- Steps -->
                 <div class="process-steps-card">
 
-                    <p class="process-steps-title">
+                    <p class="process-steps-title font-opensans-600">
                         Follow our four steps to master<br>
                         any exam :
                     </p>
 
-                    <div class="process-steps">
+                    <div class="process-steps font-opensans-400">
 
-                        <button class="process-step process-step-active" type="button" data-process-step="0">
+                        <button class="process-step process-step-active font-opensans-400" type="button"
+                            data-process-step="0">
                             <span class="process-step-line"></span>
                             <span class="process-step-number">1</span>
                             <span class="process-step-text">Signup &amp; Setup</span>
-                            <span class="process-step-icon">▣</span>
                         </button>
 
                         <button class="process-step" type="button" data-process-step="1">
@@ -600,106 +605,236 @@
                     </div>
                 </div>
 
-                <!-- Carousel -->
-                <div class="process-carousel">
 
-                    <div class="process-track">
+                <!-- Swiper -->
+                <div class="process-carousel swiper">
 
-                        <!-- Slide 1 -->
-                        <article class="process-slide">
+                    <div class="process-track swiper-wrapper">
+
+                        <!-- ==========================================
+                         SLIDE 1
+                    =========================================== -->
+                        <article class="process-slide swiper-slide">
 
                             <div class="process-slide-info">
 
-                                <span class="process-slide-label">
+                                <span class="process-slide-label font-opensans-600 ">
                                     STEP 1
                                 </span>
 
-                                <h3 class="process-slide-title">
+                                <h3 class="process-slide-title font-montserrat-600">
                                     Create Your Account
                                 </h3>
 
-                                <p class="process-slide-description">
-                                    Begin your personalized<br>
+                                <p class="process-slide-description font-opensans-400">
+                                    Begin your personalized
                                     learning path in seconds.
                                 </p>
 
-                                <div class="process-feature">
-                                    <span class="process-feature-icon process-feature-icon-blue">
-                                        ▱
+                                <div class="process-feature font-opensans-400">
+                                    <span class="process-feature-icon">
+                                        <img src="assets/process_media/access.svg" alt="access icon">
                                     </span>
 
                                     <div>
-                                        <strong>Instant Access</strong>
-                                        <small>Email or Google login for quick start.</small>
+                                        <p class="process-feature-point">Instant Access</p>
+                                        <p class="process-feature-subpoint">
+                                            Email or Google login for quick start.
+                                        </p>
                                     </div>
                                 </div>
 
-                                <div class="process-feature">
-                                    <span class="process-feature-icon process-feature-icon-green">
-                                        ♧
+                                <div class="process-feature font-opensans-400">
+                                    <span class="process-feature-icon">
+                                        <img src="assets/process_media/privacy.svg" alt="privacy icon">
                                     </span>
 
                                     <div>
-                                        <strong>Data Privacy</strong>
-                                        <small>Your progress data is secured and private.</small>
+                                        <p class="process-feature-point">Data Privacy</p>
+                                        <p class="process-feature-subpoint">
+                                            Your progress data is secured and private.
+                                        </p>
                                     </div>
                                 </div>
 
                             </div>
 
                             <div class="process-illustration">
-                                <div class="process-browser">
+                                <img src="assets/process_media/step1.png" alt="step 1 image">
+                            </div>
 
-                                    <div class="process-browser-bar">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                        </article>
+
+
+                        <!-- ==========================================
+                         SLIDE 2
+                    =========================================== -->
+                        <article class="process-slide swiper-slide">
+
+                            <div class="process-slide-info">
+
+                                <span class="process-slide-label font-opensans-600">
+                                    STEP 2
+                                </span>
+
+                                <h3 class="process-slide-title font-montserrat-600">
+                                    Pick Your Goal
+                                </h3>
+
+                                <p class="process-slide-description font-opensans-400">
+                                    From SEE to Loksewa Aayog, we cover
+                                    the full spectrum of competitive
+                                    examinations in Nepal with updated
+                                    syllabus content.
+                                </p>
+
+                                <div class="process-feature-goal  font-opensans-400">
+                                    <div>
+                                        <p>Engineering Entrance</p>
+                                        <span> <img src="assets/process_media/weui_arrow-outlined.svg"
+                                                alt="arrow"></span>
+                                    </div>
+                                    <div>
+                                        <p>Medical Entrance</p>
+                                        <span> <img src="assets/process_media/weui_arrow-outlined.svg"
+                                                alt="arrow"></span>
+                                    </div>
+                                    <div>
+                                        <p>NEC License </p>
+                                        <span> <img src="assets/process_media/weui_arrow-outlined.svg"
+                                                alt="arrow"></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="process-illustration">
+                                <img src="assets/process_media/step2.png" alt="step 2 image">
+                            </div>
+
+                        </article>
+
+
+                        <!-- ==========================================
+                         SLIDE 3
+                    =========================================== -->
+                        <article class="process-slide swiper-slide">
+
+                            <div class="process-slide-info">
+
+                                <span class="process-slide-label font-opensans-600">
+                                    STEP 3
+                                </span>
+
+                                <h3 class="process-slide-title font-montserrat-600">
+                                    Practice by levels
+                                </h3>
+
+                                <p class="process-slide-description font-opensans-400">
+                                    Begin your Don't just study, master. Our
+                                    adaptive engine identifies your weak spots and suggests levels that challenge you
+                                    just enough to grow.personalized learning path in seconds.
+                                </p>
+
+                                <div class="process-feature-prog">
+
+                                    <div class="process-feature-progression">
+                                        <img src="assets/process_media/progression.svg" alt="progression image">
                                     </div>
 
-                                    <div class="process-avatar"></div>
+                                    <div class="process-feature-progress">
+                                        <div class="process-feature-progress-fill"></div>
+                                    </div>
 
-                                    <div class="process-input process-input-one"></div>
-                                    <div class="process-input process-input-two"></div>
+                                    <div class="process-feature-item">
+                                        <div class="process-feature-skill">
+                                            <img src="assets/process_media/tick.svg" alt="check icon">
+                                        </div>
 
-                                    <div class="process-button">
-                                        <span></span>
+                                        <div class="process-feature-level font-opensans-400">
+                                            Foundation Concepts (Level 1)
+                                        </div>
+                                    </div>
+
+                                    <div class="process-feature-item">
+                                        <div class="process-feature-skill">
+                                            <img src="assets/process_media/tick.svg" alt="check icon">
+                                        </div>
+
+                                        <div class="process-feature-level font-opensans-400">
+                                            Intermediate Application (Level 2)
+                                        </div>
+                                    </div>
+
+                                    <div class="process-feature-item">
+                                        <div class="process-feature-skill-lock">
+                                            <img src="assets/process_media/lock.svg" alt="check icon">
+                                        </div>
+
+                                        <div class="process-feature-level-lock font-opensans-400">
+                                            Advanced Problem Solving (Level 3)
+                                        </div>
                                     </div>
 
                                 </div>
 
-                                <div class="process-floating-icon process-floating-lock">
-                                    ♧
+
+
+
+                            </div>
+
+                            <div class="process-illustration">
+                                <img src="assets/process_media/step3.png" alt="step 3 image">
+                            </div>
+
+                        </article>
+
+
+                        <!-- ==========================================
+                         SLIDE 4
+                    =========================================== -->
+                        <article class="process-slide swiper-slide">
+
+                            <div class="process-slide-info">
+
+                                <span class="process-slide-label font-opensans-600">
+                                    STEP 4
+                                </span>
+
+                                <h3 class="process-slide-title font-montserrat-600">
+                                    Simulate & Conquer
+                                </h3>
+
+                                <p class="process-slide-description font-opensans-400">
+                                    Experience the actual pressure with timed
+                                    mock tests. Get detailed performance
+                                    reports that show exactly where you
+                                    stand against thousands of other
+                                    students.
+                                </p>
+
+
+                                <div class="process-feature-goal  font-opensans-400">
+                                    <div class="conquer">
+                                        <span> <img src="assets/process_media/tick-small-solid.svg" alt="arrow"></span>
+                                        <p>Time management</p>
+
+                                    </div>
+                                    <div class="conquer">
+                                        <span> <img src="assets/process_media/tick-small-solid.svg" alt="arrow"></span>
+                                        <p>Detailed report</p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="process-floating-icon process-floating-folder">
-                                    ▱
-                                </div>
                             </div>
 
-                        </article>
-
-                        <!-- Slide 2 -->
-                        <article class="process-slide process-slide-empty">
-                            <div class="process-empty-content">
-                                <span class="process-slide-label">STEP 2</span>
-                                <h3>Choose Exam</h3>
+                            <div class="process-illustration">
+                                <img src="assets/process_media/step4.png" alt="step 4 image">
                             </div>
-                        </article>
 
-                        <!-- Slide 3 -->
-                        <article class="process-slide process-slide-empty">
-                            <div class="process-empty-content">
-                                <span class="process-slide-label">STEP 3</span>
-                                <h3>Adaptive Practice</h3>
-                            </div>
-                        </article>
-
-                        <!-- Slide 4 -->
-                        <article class="process-slide process-slide-empty">
-                            <div class="process-empty-content">
-                                <span class="process-slide-label">STEP 4</span>
-                                <h3>Master Mocktest</h3>
-                            </div>
                         </article>
 
                     </div>
@@ -710,35 +845,35 @@
         </div>
     </section>
 
+
     <!-- Cta -->
     <section class="cta-section">
         <div class="cta-container">
 
             <!-- Decorative path -->
             <div class="cta-decoration" aria-hidden="true">
-                <div class="cta-graduation-cap">⌂</div>
-                <div class="cta-path"></div>
+                <img src="assets/cta_image/cta_road.svg" alt="road to graduation">
             </div>
 
             <!-- Content -->
-            <div class="cta-content">
+            <div class="cta-content font-opensans-600">
 
                 <div class="cta-badge">
                     <span class="cta-badge-dot"></span>
                     <span>Start Your Journey Today</span>
                 </div>
 
-                <h2 class="cta-title">
+                <h2 class="cta-title font-montserrat-600">
                     Ready To Crack Your<br>
                     Entrance Exam ?
                 </h2>
 
-                <p class="cta-description">
+                <p class="cta-description font-opensans-400">
                     Join thousands of students preparing smarter<br>
-                    everyday.Your success story starts here.
+                    everyday. Your success story starts here.
                 </p>
 
-                <div class="cta-actions">
+                <div class="cta-actions font-montserrat-500">
                     <a href="#" class="cta-button cta-button-primary">
                         <span>Create Free Account</span>
                         <span class="cta-button-arrow">→</span>
@@ -752,12 +887,18 @@
                 <!-- Students -->
                 <div class="cta-students">
                     <div class="cta-avatars">
-                        <div class="cta-avatar cta-avatar-one"></div>
-                        <div class="cta-avatar cta-avatar-two"></div>
-                        <div class="cta-avatar cta-avatar-three">✓</div>
+                        <div class="cta-avatar cta-avatar-one">
+                            <img src="assets/cta_image/avatar1.png" alt="Student avatar">
+                        </div>
+                        <div class="cta-avatar cta-avatar-two">
+                            <img src="assets/cta_image/avatar2.png" alt="Student avatar">
+                        </div>
+                        <div class="cta-avatar cta-avatar-three">
+                            <img src="assets/cta_image/avatar3.png" alt="Student avatar">
+                        </div>
                     </div>
 
-                    <span class="cta-student-count">
+                    <span class="cta-student-count font-opensans-400">
                         10,000+ students already preparing
                     </span>
                 </div>
@@ -771,16 +912,15 @@
         <div class="exam-container">
 
             <!-- Header -->
-            <div class="exam-header">
-                <span class="section-label">EXAMS WE COVER</span>
+            <div class="section-header">
+                <span class="section-label font-opensans-600">EXAMS WE COVER</span>
 
-                <h2 class="exam-title">
+                <h2 class="section-title font-montserrat-600">
                     Wide Range Of Exam Coverage
                 </h2>
 
-                <p class="exam-description">
+                <p class="section-subtitle font-opensans-400">
                     From school to government jobs and beyond , explore every major exam
-                    <br class="exam-desktop-break">
                     in Nepal and achieve your dreams.
                 </p>
             </div>
@@ -790,38 +930,44 @@
             <div class="exam-stats">
 
                 <div class="exam-stat">
-                    <div class="exam-stat-icon exam-stat-icon-blue">▦</div>
+                    <div class="exam-stat-icon">
+                        <img src="/assets/exam_media/categories.svg" alt="Categories"
+                             >
+                    </div>
 
                     <div class="exam-stat-content">
-                        <span class="exam-stat-number">25+</span>
-                        <span class="exam-stat-label">categories</span>
+                        <span class="exam-stat-number font-opensans-600">25+</span>
+                        <span class="exam-stat-label font-opensans-600">categories</span>
                     </div>
                 </div>
 
                 <div class="exam-stat">
-                    <div class="exam-stat-icon exam-stat-icon-blue">▣</div>
+                    <div class="exam-stat-icon"><img src="/assets/exam_media/covered.svg" alt="Categories"
+                             ></div>
 
                     <div class="exam-stat-content">
-                        <span class="exam-stat-number">500+</span>
-                        <span class="exam-stat-label">Exams Covered</span>
+                        <span class="exam-stat-number font-opensans-600">500+</span>
+                        <span class="exam-stat-label font-opensans-600">Exams Covered</span>
                     </div>
                 </div>
 
                 <div class="exam-stat">
-                    <div class="exam-stat-icon exam-stat-icon-blue">?</div>
+                    <div class="exam-stat-icon"><img src="/assets/exam_media/questions.svg" alt="Categories"
+                             ></div>
 
                     <div class="exam-stat-content">
-                        <span class="exam-stat-number">50K</span>
-                        <span class="exam-stat-label">Practice Questions</span>
+                        <span class="exam-stat-number font-opensans-600">50K</span>
+                        <span class="exam-stat-label font-opensans-600">Practice Questions</span>
                     </div>
                 </div>
 
                 <div class="exam-stat">
-                    <div class="exam-stat-icon exam-stat-icon-blue">♧</div>
+                    <div class="exam-stat-icon"><img src="/assets/exam_media/aspirants.svg" alt="Categories"
+                             ></div>
 
                     <div class="exam-stat-content">
-                        <span class="exam-stat-number">100K</span>
-                        <span class="exam-stat-label">Aspirants</span>
+                        <span class="exam-stat-number font-opensans-600">100K</span>
+                        <span class="exam-stat-label font-opensans-600">Aspirants</span>
                     </div>
                 </div>
 
@@ -836,21 +982,22 @@
                     <!-- SEE -->
                     <article class="exam-card">
                         <div class="exam-card-icon exam-card-icon-blue">
-                            SEE
+                            <img src="/assets/exam_media/SEE.svg" alt="Categories"  >
                         </div>
 
-                        <h3 class="exam-card-title">
+                        <h3 class="exam-card-title font-opensans-600">
                             After SEE
                         </h3>
 
-                        <p class="exam-card-description">
+                        <p class="exam-card-description font-opensans-600">
                             +2 diploma &amp;<br>
                             foundation
                         </p>
 
-                        <a href="#" class="exam-card-link">
+                        <a href="#" class="exam-card-link font-opensans-600">
                             <span>50+ Exams</span>
-                            <span class="exam-card-arrow">→</span>
+                            <span class="exam-card-arrow"><img src="/assets/exam_media/right_arrow.svg" alt="Categories"
+                                    style="width: 20px; height: 20px;"></span>
                         </a>
                     </article>
 
@@ -858,21 +1005,22 @@
                     <!-- +2 -->
                     <article class="exam-card">
                         <div class="exam-card-icon exam-card-icon-green">
-                            +2
+                            <img src="/assets/exam_media/plus2.svg" alt="Categories"  >
                         </div>
 
-                        <h3 class="exam-card-title">
+                        <h3 class="exam-card-title font-opensans-600">
                             After +2
                         </h3>
 
-                        <p class="exam-card-description">
+                        <p class="exam-card-description font-opensans-600">
                             Bachelor Entrance<br>
                             (All Streams)
                         </p>
 
-                        <a href="#" class="exam-card-link">
+                        <a href="#" class="exam-card-link font-opensans-600">
                             <span>50+ Exams</span>
-                            <span class="exam-card-arrow">→</span>
+                            <span class="exam-card-arrow"><img src="/assets/exam_media/right_arrow.svg" alt="Categories"
+                                    style="width: 20px; height: 20px;"></span>
                         </a>
                     </article>
 
@@ -880,21 +1028,23 @@
                     <!-- Bachelor's -->
                     <article class="exam-card">
                         <div class="exam-card-icon exam-card-icon-blue">
-                            ♢
+                            <img src="/assets/exam_media/program.svg" alt="Categories"
+                                 >
                         </div>
 
-                        <h3 class="exam-card-title">
+                        <h3 class="exam-card-title font-opensans-600">
                             After Bachelor’s
                         </h3>
 
-                        <p class="exam-card-description">
+                        <p class="exam-card-description font-opensans-600">
                             Masters &amp; license<br>
                             Programs
                         </p>
 
-                        <a href="#" class="exam-card-link">
+                        <a href="#" class="exam-card-link font-opensans-600">
                             <span>50+ Exams</span>
-                            <span class="exam-card-arrow">→</span>
+                            <span class="exam-card-arrow"><img src="/assets/exam_media/right_arrow.svg" alt="Categories"
+                                    style="width: 20px; height: 20px;"></span>
                         </a>
                     </article>
 
@@ -902,21 +1052,23 @@
                     <!-- Loksewa -->
                     <article class="exam-card">
                         <div class="exam-card-icon exam-card-icon-orange">
-                            ♟
+                            <img src="/assets/exam_media/service.svg" alt="Categories"
+                                 >
                         </div>
 
-                        <h3 class="exam-card-title">
+                        <h3 class="exam-card-title font-opensans-600">
                             Loksewa
                         </h3>
 
-                        <p class="exam-card-description">
+                        <p class="exam-card-description font-opensans-600">
                             Public Service<br>
                             Commission
                         </p>
 
-                        <a href="#" class="exam-card-link">
+                        <a href="#" class="exam-card-link font-opensans-600">
                             <span>50+ Exams</span>
-                            <span class="exam-card-arrow">→</span>
+                            <span class="exam-card-arrow"><img src="/assets/exam_media/right_arrow.svg" alt="Categories"
+                                    style="width: 20px; height: 20px;"></span>
                         </a>
                     </article>
 
@@ -928,25 +1080,27 @@
 
                     <a href="#" class="exam-feature-card">
                         <div class="exam-feature-icon">
-                            ▤
+                            <img src="/assets/exam_media/note.svg" alt="Categories"  >
                         </div>
 
-                        <div class="exam-feature-content">
-                            <strong>500+ exams in 10+ categories</strong>
+                        <div class="exam-feature-content font-opensans-600">
+                            <p>500+ exams in 10+ categories</p>
                             <span>Find the right exam for your dream future</span>
                         </div>
 
-                        <span class="exam-feature-arrow">→</span>
+                        <span class="exam-feature-arrow"><img src="/assets/exam_media/right_arrow.svg" alt="Categories"
+                                style="width: 30px; height: 30px;"></span>
                     </a>
 
 
-                    <a href="#" class="exam-other-card">
+                    <a href="#" class="exam-other-card font-opensans-600">
                         <div class="exam-other-content">
-                            <strong>Other Exams</strong>
+                            <p>Other Exams</p>
                             <span>Scholarship, Olympiads</span>
                         </div>
 
-                        <span class="exam-other-arrow">→</span>
+                        <span class="exam-other-arrow"><img src="/assets/exam_media/other_right_arrow.svg"
+                                alt="Categories" style="width: 20px; height: 20px;"></span>
                     </a>
 
                 </div>
@@ -960,19 +1114,19 @@
     <section class="faq-section">
         <div class="faq-container">
 
-            <div class="faq-header">
-                <div class="section-label">| FAQ</div>
+            <div class="section-header">
+                <div class="section-label font-opensans-600">FAQ</div>
 
-                <h2 class="faq-title">
+                <h2 class="section-title font-montserrat-600">
                     Frequently Asked Questions
                 </h2>
 
-                <p class="faq-subtitle">
+                <p class="section-subtitle font-opensans-400">
                     Answer for frequently asked questions
                 </p>
             </div>
 
-            <div class="faq-accordion">
+            <div class="faq-accordion font-opensans-400">
 
                 <!-- Questions -->
                 <div class="faq-list">
@@ -1094,17 +1248,17 @@
         <div class="testimonials-container">
 
             <!-- Header -->
-            <div class="testimonials-header">
+            <div class="section-header">
 
-                <div class="section-label">
-                    | STUDENT REVIEWS
+                <div class="section-label font-opensans-600">
+                    STUDENT REVIEWS
                 </div>
 
-                <h2 class="testimonials-title">
+                <h2 class="section-title font-montserrat-600">
                     What Students Say
                 </h2>
 
-                <p class="testimonials-subtitle">
+                <p class="section-subtitle font-opensans-400">
                     Join thousands of students who are already
                     preparing smarter with GyanBato.
                 </p>
@@ -1499,6 +1653,9 @@
 
 
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 
 </body>
