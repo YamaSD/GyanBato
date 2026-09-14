@@ -560,8 +560,8 @@ em {
 
 /* Active Link Underline */
 .nav-link.active {
-  color: #1C4D65;
-  font-weight: 600;
+  /* color: #1C4D65; */
+  /* font-weight: 600; */
 }
 
 .logo img {
@@ -570,14 +570,14 @@ em {
 }
 
 .nav-link.active::after {
-  content: "";
+  /* content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2.5px;
   background-color: #1C4D65;
-  border-radius: 2px;
+  border-radius: 2px; */
 }
 
 /* CTA Button */
