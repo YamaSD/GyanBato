@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/auth/account.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css?v=6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo Section -->
+            <a href="/#" class="logo">
+                <img src="/assets/nav_footer/gyan_logo.svg" alt="GyanBato Logo" class="logo-icon">
+                <!-- <div class="logo-text">
+                    <span class="brand-name">Gyan</span>
+                    <span class="brand-sub">Bato</span>
+                </div> -->
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/#" class="nav-link active font-montserrat-500">Home</a></li>
+                    <li><a href="/index.html#process" class="nav-link font-montserrat-500">How it works</a></li>
+                    <li><a href="/index.html#features" class="nav-link font-montserrat-500">Features</a></li>
+                    <li><a href="/index.html#testimonials" class="nav-link font-montserrat-500">Testimonials</a></li>
+                    <li><a href="/index.html#faq" class="nav-link font-montserrat-500">Help</a></li>
+                    <li><a href="#" class="nav-link font-montserrat-500">Login</a></li>
+                </ul>
+                <div class="mobile-cta">
+                    <a href="#" class="btn-join font-montserrat-500">Join for Free</a>
+                </div>
+            </nav>
+
+            <!-- CTA Button (Desktop) -->
+            <div class="desktop-cta">
+                <a href="#" class="btn-join font-montserrat-500">Join for Free</a>
+            </div>
+
+            <!-- Hamburger Menu Toggle Icon -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section class="login-section">
+        <div class="login-container">
+
+            <!-- YOUR EXISTING LEFT IMAGE -->
+            <div class="left-side">
+                <img src="/assets/account/login_page.png" class="l-side-logo" alt="Gyanbato" />
+                <img src="/assets/account/fences.png" class="fence" alt="Gyanbato" />
+                <p class="left-side-text font-opensans-400">
+                    Set up your Gyanbato account in just a few clicks and start your journey now.
+                </p>
+            </div>
+
+            <!-- RIGHT LOGIN SIDE -->
+            <div class="right-side">
+                <form class="login-form">
+
+                    <h1 class="font-opensans-600">Login To Your Account</h1>
+
+                    <p class="subtitle font-opensans-400">
+                        Enter Your Credentials to Access Your Account
+                    </p>
+
+                    <!-- Username -->
+                    <div class="form-group font-opensans-400">
+                        <label for="username">Username</label>
+
+                        <div class="input-wrapper font-opensans-400">
+                            <input type="text" id="username" name="username" placeholder="Enter Your Username"
+                                autocomplete="username" />
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group font-opensans-400">
+                        <label for="password">Password*</label>
+
+                        <div class="input-wrapper font-opensans-400">
+                            <input type="password" id="password" name="password" class="password-input"
+                                placeholder="Enter Your Password" autocomplete="current-password" />
+
+                            <button type="button font-opensans-400" class="password-toggle" onclick="togglePassword()"
+                                aria-label="Show password">
+                                <i id="password-icon" class="fa-regular fa-eye-slash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Remember / Forgot -->
+                    <div class="form-options">
+
+                        <label class="remember font-opensans-400">
+                            <input type="checkbox" checked />
+                            <span>Remember Me</span>
+                        </label>
+
+                        <a href="./ForgotPassoword.html" class="forgot-password font-opensans-400">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <!-- Login -->
+                    <button type="submit" class="login-button font-opensans-600">
+                        Login
+                    </button>
+
+                    <!-- Google -->
+                    <button type="button" class="google-button font-opensans-600">
+                        <span class="google-icon"><img src="/assets/account/google.svg" alt="Google" /></span>
+                        <span>Sign in with Google</span>
+                    </button>
+
+                    <!-- Register -->
+                    <div class="register-divider font-opensans-400">
+                        <span>or register as</span>
+                    </div>
+
+                    <div class="register-links">
+
+                        <a href="RegisterStudent.html" class="register-link font-opensans-600">
+                            <i class="fa-regular fa-user font-opensans-600"></i>
+                            Student
+                        </a>
+
+                        <a href="RegisterTeacher.html" class="register-link font-opensans-600">
+                            <i class="fa-regular fa-address-card font-opensans-600"></i>
+                            Teacher
+                        </a>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+
+        <div class="footer-container">
+
+            <!-- Main Footer -->
+            <div class="footer-main">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="#" class="footer-logo">
+                        <img src="/assets/nav_footer/gyan_logo.svg" alt="Gyanbato" class="footer-logo-image" />
+                    </a>
+
+
+                    <p class="footer-description font-opensans-400">
+                        Helping students prepare smarter for
+                        entrance and competitive exams with AI-
+                        powered tools.
+                    </p>
+
+                </div>
+
+
+                <!-- Exams -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Exams
+                    </h3>
+
+                    <ul class="footer-links font-opensans-400">
+                        <li>
+                            <a href="#">Engineering Entrance</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Medical Entrance</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Banking Exams</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Government Exams</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Company -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Company
+                    </h3>
+
+                    <ul class="footer-links font-opensans-400">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+
+                        <li>
+                            <a href="/#cta">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Legal -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Legal
+                    </h3>
+
+                    <ul class="footer-links footer-legal-links font-opensans-400">
+                        <li>
+                            <a href="/legal/Privacy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/legal/Terms.html">Terms &amp; Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="/legal/HelpSupport.html">Help &amp; Support</a>
+                        </li>
+
+                        <li>
+                            <a href="/legal/DeleteAccount.html">Request Account Deletion</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+
+                <p class="footer-copyright font-opensans-400">
+                    © 2026 Gyanbato All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="/Privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <span class="footer-separator">
+                        |
+                    </span>
+
+                    <a href="/Terms.html">
+                        Terms of Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+        <script>
+        function togglePassword() {
+            const password = document.getElementById("password");
+            const icon = document.getElementById("password-icon");
+
+            if (password.type === "password") {
+                password.type = "text";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                password.type = "password";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
