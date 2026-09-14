@@ -4,7 +4,6 @@ const navLinks = document.querySelectorAll(".nav-link");
 const faqItems = document.querySelectorAll(".faq-item");
     const faqAnswers = document.querySelectorAll(".faq-answer");
 
-
 // Toggle mobile menu open/close on hamburger click
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");

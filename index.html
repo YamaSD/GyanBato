@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" href="style2.css?v=6">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- <link rel="stylesheet" href="style3.css?v=6"> -->
+
 </head>
 
 <body>
@@ -21,22 +25,22 @@
         <div class="nav-container">
 
             <!-- Logo Section -->
-            <a href="#" class="logo">
+            <a href="/#" class="logo">
                 <img src="assets/nav_footer/gyan_logo.svg" alt="GyanBato Logo" class="logo-icon">
-                <div class="logo-text">
+                <!-- <div class="logo-text">
                     <span class="brand-name">Gyan</span>
                     <span class="brand-sub">Bato</span>
-                </div>
+                </div> -->
             </a>
 
             <!-- Navigation Links -->
             <nav class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="#" class="nav-link active font-montserrat-500">Home</a></li>
-                    <li><a href="#" class="nav-link font-montserrat-500">How it works</a></li>
-                    <li><a href="#" class="nav-link font-montserrat-500">Features</a></li>
-                    <li><a href="#" class="nav-link font-montserrat-500">Testimonials</a></li>
-                    <li><a href="#" class="nav-link font-montserrat-500">Help</a></li>
+                    <li><a href="/#" class="nav-link active font-montserrat-500">Home</a></li>
+                    <li><a href="/index.html#process" class="nav-link font-montserrat-500">How it works</a></li>
+                    <li><a href="/index.html#features" class="nav-link font-montserrat-500">Features</a></li>
+                    <li><a href="/index.html#testimonials" class="nav-link font-montserrat-500">Testimonials</a></li>
+                    <li><a href="/index.html#faq" class="nav-link font-montserrat-500">Help</a></li>
                     <li><a href="#" class="nav-link font-montserrat-500">Login</a></li>
                 </ul>
                 <div class="mobile-cta">
@@ -72,7 +76,8 @@
 
             <!-- ===== Top text content ===== -->
             <div class="hero-content">
-                <span class="hero-eyebrow font-opensans-500" data-anim="fade-down"># Your Competitive Exam Partner</span>
+                <span class="hero-eyebrow font-opensans-500" data-anim="fade-down"># Your Competitive Exam
+                    Partner</span>
 
                 <h1 class="hero-title" data-anim="fade-up">
                     Where Smart Preparation<br class="hide-mobile">
@@ -103,7 +108,7 @@
                 <img class="stage-glow" data-anim="scale-in" src="assets/icons/glow-dome.svg" alt="">
 
                 <!-- Center arch photo -->
-                <div class="stage-photo" data-anim="scale-in">
+                <div class="stage-photo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <div class="stage-photo__frame">
                         <img src="assets/images/hero-student.png"
                             alt="Smiling student holding a notebook and showing the exam-prep app on her phone">
@@ -116,7 +121,8 @@
                 <img class="decor decor--target" data-anim="fade-in" src="assets/icons/icon-target.svg" alt="">
 
                 <!-- Card: 30k+ Students -->
-                <div class="card card--students" data-anim="float-in" data-float>
+                <div class="card card--students" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <div class="avatars">
                         <img src="assets/images/avatar-1.png" alt="Student avatar">
                         <img src="assets/images/avatar-2.png" alt="Student avatar">
@@ -129,7 +135,7 @@
                 <div class="badge badge--mockexams" data-anim="float-in" data-float>
                     <img class="badge__icon" src="assets/icons/icon-mockexams.svg" alt="">
                     <p class="badge__text">
-                    5000+<br>Mock Exams</p>
+                        5000+<br>Mock Exams</p>
                 </div>
 
                 <!-- Pill: Smart Mocktest -->
@@ -158,7 +164,7 @@
 
 
     <!-- Platform Features -->
-    <section class="platform-features">
+    <section class="platform-features" id="features">
 
         <div class="platform-container">
 
@@ -361,7 +367,7 @@
     </section>
 
     <!-- Process -->
-    <section class="process-section">
+    <section class="process-section" id="process">
         <div class="process-container">
 
             <!-- Header -->
@@ -661,7 +667,7 @@
 
 
     <!-- Cta -->
-    <section class="cta-section">
+    <section class="cta-section" id="cta">
         <div class="cta-container">
 
             <!-- Decorative path -->
@@ -919,7 +925,7 @@
     </section>
 
     <!-- Faq -->
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <div class="faq-container">
 
             <div class="section-header">
@@ -1051,7 +1057,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" id="testimonials">
 
         <div class="testimonials-container">
 
@@ -1252,7 +1258,7 @@
                         </li>
 
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="/#cta">Contact</a>
                         </li>
 
                         <li>
@@ -1272,15 +1278,19 @@
 
                     <ul class="footer-links footer-legal-links font-opensans-400">
                         <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="/Privacy.html">Privacy Policy</a>
                         </li>
 
                         <li>
-                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="/Terms.html">Terms &amp; Conditions</a>
                         </li>
 
                         <li>
-                            <a href="#">Help &amp; Support</a>
+                            <a href="/HelpSupport.html">Help &amp; Support</a>
+                        </li>
+
+                        <li>
+                            <a href="/DeleteAccount.html">Request Account Deletion</a>
                         </li>
                     </ul>
 
@@ -1302,7 +1312,7 @@
 
                 <div class="footer-bottom-links">
 
-                    <a href="#">
+                    <a href="/Privacy.html">
                         Privacy Policy
                     </a>
 
@@ -1310,7 +1320,7 @@
                         |
                     </span>
 
-                    <a href="#">
+                    <a href="/Terms.html">
                         Terms of Service
                     </a>
 
@@ -1321,9 +1331,12 @@
         </div>
 
     </footer>
+     <script>
+        AOS.init();
+    </script>
 
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   
     <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

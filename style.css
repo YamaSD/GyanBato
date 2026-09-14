@@ -565,8 +565,8 @@ em {
 }
 
 .logo img {
-  width: 43px;
-  height: 44px;
+  width: 62px;
+  height: auto;
 }
 
 .nav-link.active::after {

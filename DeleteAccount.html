@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Account Deletion | GyanBato</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style2.css?v=6">
+
+    <link rel="stylesheet" href="style3.css?v=6">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo Section -->
+            <a href="/#" class="logo">
+                <img src="assets/nav_footer/gyan_logo.svg" alt="GyanBato Logo" class="logo-icon">
+                <!-- <div class="logo-text">
+                    <span class="brand-name">Gyan</span>
+                    <span class="brand-sub">Bato</span>
+                </div> -->
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/#" class="nav-link active font-montserrat-500">Home</a></li>
+                    <li><a href="/index.html#process" class="nav-link font-montserrat-500">How it works</a></li>
+                    <li><a href="/index.html#features" class="nav-link font-montserrat-500">Features</a></li>
+                    <li><a href="/index.html#testimonials" class="nav-link font-montserrat-500">Testimonials</a></li>
+                    <li><a href="/index.html#faq" class="nav-link font-montserrat-500">Help</a></li>
+                    <li><a href="#" class="nav-link font-montserrat-500">Login</a></li>
+                </ul>
+                <div class="mobile-cta">
+                    <a href="#" class="btn-join font-montserrat-500">Join for Free</a>
+                </div>
+            </nav>
+
+            <!-- CTA Button (Desktop) -->
+            <div class="desktop-cta">
+                <a href="#" class="btn-join font-montserrat-500">Join for Free</a>
+            </div>
+
+            <!-- Hamburger Menu Toggle Icon -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="landing_legal_main landing_container">
+
+        <style>
+            .delete-container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                font-family: 'Inter', system-ui, -apple-system, sans-serif;
+                color: #1e293b;
+            }
+
+            .delete-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .delete-title {
+                font-size: 2.25rem;
+                font-weight: 800;
+                color: #0f172a;
+                margin-bottom: 12px;
+                letter-spacing: -0.025em;
+            }
+
+            .delete-meta {
+                font-size: 0.875rem;
+                color: #64748b;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+
+            .info-card {
+                background: #f8fafc;
+                border: 1px solid #e2e8f0;
+                border-radius: 12px;
+                padding: 24px;
+                margin-bottom: 30px;
+            }
+
+            .info-card-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #0f172a;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .step-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .step-item {
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 20px;
+            }
+
+            .step-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .step-number {
+                position: absolute;
+                left: 0;
+                top: 2px;
+                width: 26px;
+                height: 26px;
+                background: #3b82f6;
+                color: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.875rem;
+                font-weight: 700;
+            }
+
+            .step-title {
+                font-weight: 600;
+                color: #1e293b;
+                margin-bottom: 4px;
+            }
+
+            .step-desc {
+                color: #64748b;
+                font-size: 0.938rem;
+            }
+
+            .data-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+                margin-top: 15px;
+            }
+
+            .data-item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 0.938rem;
+                color: #475569;
+            }
+
+            .data-item i {
+                color: #10b981;
+            }
+
+            .form-card {
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 16px;
+                box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+                padding: 32px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            .form-label {
+                display: block;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: #334155;
+                margin-bottom: 8px;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 10px 14px;
+                border: 1px solid #cbd5e1;
+                border-radius: 8px;
+                font-size: 0.938rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                color: #0f172a;
+            }
+
+            .form-input:focus {
+                border-color: #3b82f6;
+                box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+                outline: 0;
+            }
+
+            .form-textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+
+            .form-checkbox-container {
+                display: flex;
+                gap: 10px;
+                align-items: flex-start;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+            .form-checkbox {
+                margin-top: 4px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .form-checkbox-label {
+                font-size: 0.875rem;
+                color: #475569;
+                line-height: 1.4;
+            }
+
+            .submit-btn {
+                width: 100%;
+                background: #dc2626;
+                color: #ffffff;
+                border: none;
+                padding: 12px 20px;
+                font-weight: 600;
+                font-size: 1rem;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background 0.15s ease-in-out;
+            }
+
+            .submit-btn:hover {
+                background: #b91c1c;
+            }
+
+            .alert {
+                padding: 16px;
+                border-radius: 8px;
+                margin-bottom: 24px;
+                font-size: 0.938rem;
+            }
+
+            .alert-success {
+                background: #ecfdf5;
+                border: 1px solid #a7f3d0;
+                color: #065f46;
+            }
+
+            .alert-error {
+                background: #fef2f2;
+                border: 1px solid #fecaca;
+                color: #991b1b;
+            }
+
+            .validation-error {
+                color: #dc2626;
+                font-size: 0.75rem;
+                margin-top: 4px;
+                display: block;
+            }
+        </style>
+
+        <div class="delete-container">
+            <div class="delete-header">
+                <p class="delete-meta">Last updated: September 14, 2026</p>
+                <h1 class="delete-title">Account Deletion &amp; Data Removal</h1>
+                <p class="landing_legal_lead">
+                    Learn how to delete your GyanBato account and request the removal of all associated personal data in
+                    compliance with Google Play Store policies.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <div class="info-card-title">
+                    <i class="fas fa-info-circle text-primary"></i> Steps to Request Deletion
+                </div>
+                <ul class="step-list">
+                    <li class="step-item">
+                        <span class="step-number">1</span>
+                        <div class="step-title">Submit Deletion Request</div>
+                        <div class="step-desc">Fill out the request form below with your registered email and details.
+                            You can request deletion even if you have already uninstalled the application.</div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">2</span>
+                        <div class="step-title">Verification &amp; Confirmation</div>
+                        <div class="step-desc">Our support team will verify your registered user profile and email
+                            ownership to prevent unauthorized deletion.</div>
+                    </li>
+                    <li class="step-item">
+                        <span class="step-number">3</span>
+                        <div class="step-title">Permanent Data Erasure</div>
+                        <div class="step-desc">Once verified, all your account records and personal data will be
+                            permanently deleted from our active servers within 7-14 business days.</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-title">
+                    <i class="fas fa-trash-alt text-danger"></i> What Data Will Be Permanently Removed?
+                </div>
+                <p class="step-desc">Upon processing your request, the following information is permanently erased and
+                    cannot be recovered:</p>
+                <div class="data-list">
+                    <div class="data-item"><i class="fas fa-check"></i> Account Profile (Name, Email, Role)</div>
+                    <div class="data-item"><i class="fas fa-check"></i> Registered Exam Entries</div>
+                    <div class="data-item"><i class="fas fa-check"></i> Practice Test &amp; Quiz Histories</div>
+                    <div class="data-item"><i class="fas fa-check"></i> Submitted Answers &amp; Submissions</div>
+                    <div class="data-item"><i class="fas fa-check"></i> Earned Marks &amp; Published Results</div>
+                    <div class="data-item"><i class="fas fa-check"></i> Device tokens &amp; Refresh keys</div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h3 class="info-card-title">Submit Deletion Request</h3>
+                <p class="step-desc" style="margin-bottom: 24px;">Please provide the registered details below to
+                    initiate deletion. No login is required.</p>
+
+                <form method="post" action="/Home/DeleteAccount">
+
+
+                    <div class="form-group">
+                        <label class="form-label" for="Email">Registered Email Address</label>
+                        <input class="form-input" placeholder="Enter your registered email" type="email" data-val="true"
+                            data-val-email="Invalid email address." data-val-required="Email is required." id="Email"
+                            name="Email" value="">
+                        <span class="validation-error field-validation-valid" data-valmsg-for="Email"
+                            data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="Reason">Reason for Account Deletion</label>
+                        <textarea class="form-input form-textarea"
+                            placeholder="Please let us know why you wish to delete your account (e.g. Completed exam prep, privacy concerns)"
+                            data-val="true" data-val-required="Reason for deletion is required." id="Reason"
+                            name="Reason"></textarea>
+                        <span class="validation-error field-validation-valid" data-valmsg-for="Reason"
+                            data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="form-checkbox-container">
+                        <input type="checkbox" id="confirmDeletion" class="form-checkbox" required="">
+                        <label for="confirmDeletion" class="form-checkbox-label">
+                            I understand that account deletion is permanent and irreversible. I request the permanent
+                            removal of my account profile, exam logs, practice history, and all associated personal data
+                            from GyanBato.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-exclamation-triangle me-2"></i> Permanently Delete My Account &amp; Data
+                    </button>
+                    <input name="__RequestVerificationToken" type="hidden"
+                        value="CfDJ8LaarVufQ9FHhIQnPtxs9ikOuPJjvJo0qKYdUE5laHw8oEywGBTDSE0ieXZVXuV_GCyEazhdEzPgGTzrorSKyVfWfuKuxKejTaOqhAjFnhr8bLXxmAb-nNp4NczDWQuI4rxJAtQhqRJNgADAjPu90oA">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+
+        <div class="footer-container">
+
+            <!-- Main Footer -->
+            <div class="footer-main">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="#" class="footer-logo">
+                        <img src="assets/nav_footer/gyan_logo.svg" alt="Gyanbato" class="footer-logo-image" />
+                    </a>
+
+
+                    <p class="footer-description font-opensans-400">
+                        Helping students prepare smarter for
+                        entrance and competitive exams with AI-
+                        powered tools.
+                    </p>
+
+                </div>
+
+
+                <!-- Exams -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Exams
+                    </h3>
+
+                    <ul class="footer-links font-opensans-400">
+                        <li>
+                            <a href="#">Engineering Entrance</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Medical Entrance</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Banking Exams</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Government Exams</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Company -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Company
+                    </h3>
+
+                    <ul class="footer-links font-opensans-400">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+
+                        <li>
+                            <a href="/#cta">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Legal -->
+                <div class="footer-column">
+
+                    <h3 class="footer-heading font-montserrat-400">
+                        Legal
+                    </h3>
+
+                    <ul class="footer-links footer-legal-links font-opensans-400">
+                        <li>
+                            <a href="/Privacy.html">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="/Terms.html">Terms &amp; Conditions</a>
+                        </li>
+
+                        <li>
+                            <a href="/HelpSupport.html">Help &amp; Support</a>
+                        </li>
+
+                        <li>
+                            <a href="/DeleteAccount.html">Request Account Deletion</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Divider -->
+            <div class="footer-divider"></div>
+
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+
+                <p class="footer-copyright font-opensans-400">
+                    © 2026 Gyanbato All rights reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="/Privacy.html">
+                        Privacy Policy
+                    </a>
+
+                    <span class="footer-separator">
+                        |
+                    </span>
+
+                    <a href="/Terms.html">
+                        Terms of Service
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
