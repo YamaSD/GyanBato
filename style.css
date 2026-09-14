@@ -583,10 +583,10 @@ em {
 /* CTA Button */
 .btn-join {
   display: inline-block;
-  background-color: #1C4D65;
+  background-color: #174158;
   color: #ffffff;
   padding: 10px 22px;
-  border-radius: 8px;
+  border-radius: 11px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
