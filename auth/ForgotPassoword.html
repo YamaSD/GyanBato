@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/style2.css?v=6">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-
-
 </head>
 
 <body>
@@ -58,88 +56,74 @@
     </header>
 
 
-<section class="login-section">
-    <div class="login-container">
+    <section class="login-section">
+        <div class="login-container">
 
-        <!-- ================= LEFT SIDE ================= -->
-        <div class="left-side">
+            <!-- ================= LEFT SIDE ================= -->
+            <div class="left-side">
 
-            <img src="/assets/account/forgot_pass.png"
-                 class="l-side-logo"
-                 alt="Password Recovery" />
+                <img src="/assets/account/forgot_pass.png" class="l-side-logo" alt="Password Recovery" />
 
-            <img src="/assets/account/fences.png"
-                 class="fence"
-                 alt="" />
+                <img src="/assets/account/fences.png" class="fence" alt="" />
 
-            <p class="left-side-text font-opensans-400">
-                Recover Password from your email address
-            </p>
-
-        </div>
-
-
-        <!-- ================= RIGHT SIDE ================= -->
-        <div class="right-side">
-
-            <form class="login-form">
-
-                <h1 class="font-opensans-600">
-                    Forgot Password
-                </h1>
-
-                <p class="subtitle font-opensans-400">
-                    Enter your email to receive a recovery link.
+                <p class="left-side-text font-opensans-400">
+                    Recover Password from your email address
                 </p>
 
+            </div>
 
-                <!-- Email -->
-                <div class="form-group font-opensans-400" style="margin-bottom: 0;">
 
-                    <label for="email">
-                        Email Address
-                    </label>
+            <!-- ================= RIGHT SIDE ================= -->
+            <div class="right-side">
 
-                    <div class="input-wrapper">
+                <form class="login-form">
 
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="example@gmail.com"
-                            autocomplete="email"
-                            required
-                        />
+                    <h1 class="font-opensans-600">
+                        Forgot Password
+                    </h1>
+
+                    <p class="subtitle font-opensans-400">
+                        Enter your email to receive a recovery link.
+                    </p>
+
+
+                    <!-- Email -->
+                    <div class="form-group font-opensans-400" style="margin-bottom: 0;">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                                autocomplete="email" required />
+
+                        </div>
 
                     </div>
 
-                </div>
+
+                    <!-- Request New Password -->
+                    <button type="submit" class="login-button font-opensans-600">
+                        Request New Password
+                    </button>
 
 
-                <!-- Request New Password -->
-                <button
-                    type="submit"
-                    class="login-button font-opensans-600">
-                    Request New Password
-                </button>
+                    <!-- Back to Login -->
+                    <a href="./Login.html" class="back-to-login font-opensans-400">
 
+                        <span class="back-arrow">←</span>
+                        <span>Back to login</span>
 
-                <!-- Back to Login -->
-                <a
-                    href="./Login.html"
-                    class="back-to-login font-opensans-400">
+                    </a>
 
-                    <span class="back-arrow">←</span>
-                    <span>Back to login</span>
+                </form>
 
-                </a>
-
-            </form>
+            </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
 
@@ -154,7 +138,7 @@
                 <!-- Brand -->
                 <div class="footer-brand">
 
-                    <a href="#" class="footer-logo">
+                    <a href="/" class="footer-logo">
                         <img src="/assets/nav_footer/gyan_logo.svg" alt="Gyanbato" class="footer-logo-image" />
                     </a>
 
@@ -267,7 +251,7 @@
 
                 <div class="footer-bottom-links">
 
-                    <a href="/Privacy.html">
+                    <a href="/legal/Privacy.html">
                         Privacy Policy
                     </a>
 
@@ -275,7 +259,7 @@
                         |
                     </span>
 
-                    <a href="/Terms.html">
+                    <a href="/legal/Terms.html">
                         Terms of Service
                     </a>
 
@@ -287,7 +271,7 @@
 
     </footer>
 
-        <script>
+    <script>
         function togglePassword() {
             const password = document.getElementById("password");
             const icon = document.getElementById("password-icon");
